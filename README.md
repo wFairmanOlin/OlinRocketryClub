@@ -1,7 +1,7 @@
 # OlinRocketryClub
 Repo for a self-designed flight computer
 
-##First Project - Phoenix I
+## First Project - Phoenix I
 1. 3-axis accelerometer
 2. Barometric sensor
 4. gps antenna
