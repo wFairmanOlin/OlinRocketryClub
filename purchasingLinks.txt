@@ -1,2 +1,9 @@
 Purchasing Links
 https://www.digikey.com/product-detail/en/molex-llc/5045280892/WM12730CT-ND/5822266
+
+BreadBoard Components:
+accelerometer - https://www.adafruit.com/product/2019
+gps chip      - https://www.adafruit.com/product/746
+sd card       - https://www.sparkfun.com/products/544
+cpu (sparkFun)- https://www.sparkfun.com/products/9061
+
