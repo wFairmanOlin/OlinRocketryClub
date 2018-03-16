@@ -7,4 +7,5 @@ Repo for a self-designed flight computer
 3. gps antenna
 4. data storing functionality to SD card
 5. Low frequency radio broadcasting of locations
-6. Buy snacks using the abundance of money the club has access to.
+6.Figure out how to incorporate a high voltage capacitor into the flight computer.
+7. Buy snacks using the abundance of money the club has access to.
