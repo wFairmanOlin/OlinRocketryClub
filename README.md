@@ -4,6 +4,7 @@ Repo for a self-designed flight computer
 ## First Project - Phoenix I
 1. 3-axis accelerometer
 2. Barometric sensor
-3. gps antenna
-4. datas storing functionality to SD card
-5. Low frequency radio broadcasting of locations
+4. gps antenna
+3. data storing functionality to SD card
+4. Low frequency radio broadcasting of location
+5. Figure out how to incorporate a high voltage capacitor into the flight computer.
