@@ -369,4 +369,72 @@ F 7 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-323
 	1    5500 3150
 	1    0    0    -1  
 $EndComp
+Text Label 5250 3050 2    60   ~ 0
+MISO
+Text Label 5250 3150 2    60   ~ 0
+SCK
+Text Label 5250 3250 2    60   ~ 0
+RESET
+Text Label 4150 4200 0    60   ~ 0
+RESET
+Wire Wire Line
+	3700 4200 4150 4200
+$Comp
+L R_10k R?
+U 1 1 5ABBFB31
+P 4000 4000
+F 0 "R?" V 4080 4000 50  0000 C CNN
+F 1 "R_10k" V 3900 4000 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 3930 4000 50  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/CRS.pdf" H 4080 4000 50  0001 C CNN
+F 4 "CRS0805-FX-1002ELFCT-ND" H 4000 4000 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 4000 4000 60  0001 C CNN "MFN"
+F 6 "Value" H 4000 4000 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 4480 4400 60  0001 C CNN "PurchasingLink"
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4150 4000 4200
+Connection ~ 4000 4200
+Text Label 4000 3850 0    60   ~ 0
+VCC
+Text Label 5750 3050 0    60   ~ 0
+VCC
+Text Label 5750 3150 0    60   ~ 0
+MOSI
+$Comp
+L GND #PWR?
+U 1 1 5ABBFD0B
+P 5800 3300
+F 0 "#PWR?" H 5800 3050 50  0001 C CNN
+F 1 "GND" H 5800 3150 50  0000 C CNN
+F 2 "" H 5800 3300 50  0001 C CNN
+F 3 "" H 5800 3300 50  0001 C CNN
+	1    5800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3250 5800 3250
+Wire Wire Line
+	5800 3250 5800 3300
+NoConn ~ 5450 4300
+NoConn ~ 5450 5100
+NoConn ~ 5450 5200
+NoConn ~ 5450 5000
+$Comp
+L GND #PWR?
+U 1 1 5ABBFDCC
+P 5100 4900
+F 0 "#PWR?" H 5100 4650 50  0001 C CNN
+F 1 "GND" H 5100 4750 50  0000 C CNN
+F 2 "" H 5100 4900 50  0001 C CNN
+F 3 "" H 5100 4900 50  0001 C CNN
+	1    5100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4900 5100 4800
+Wire Wire Line
+	5100 4800 5450 4800
 $EndSCHEMATC

@@ -236,6 +236,31 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# LED_0805
+#
+DEF LED_0805 D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "LED_0805" 0 100 50 H V C CNN
+F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" 0 100 50 H I C CNN
+F4 "475-1410-1-ND" 0 0 60 H I C CNN "MPN"
+F5 "Digi-Key" 0 0 60 H I C CNN "MFN"
+F6 "Value" 0 0 60 H I C CNN "Package"
+F7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Micro_SD_Card_Det
 #
 DEF Micro_SD_Card_Det J 0 40 Y Y 1 F N
@@ -329,25 +354,43 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultrafit_4
+# R_200
 #
-DEF Ultrafit_4 J 0 40 Y N 1 F N
-F0 "J" 0 300 60 H V C CNN
-F1 "Ultrafit_4" 0 -200 60 H V C CNN
-F2 "footprints:Ultrafit_4" -100 250 60 H I C CNN
-F3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1008.pdf" 0 350 60 H I C CNN
+DEF R_200 R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "R_200" -100 0 50 V V C CNN
+F2 "footprints:R_0805_OEM" -70 0 50 H I C CNN
+F3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" 80 0 50 H I C CNN
 F4 "Digi-Key" 0 0 60 H I C CNN "MFN"
-F5 "Value" 0 0 60 H I C CNN "Package"
-F6 "WM11574-ND" 0 0 60 H I C CNN "MPN"
-F7 "WM11564-ND" 400 750 60 H I C CNN "MPN2"
-F8 "https://www.digikey.com/products/en?keywords=WM11574-ND" 500 850 60 H I C CNN "PurchasingLink"
-F9 "https://www.digikey.com/product-detail/en/molex-llc/1722561004/WM11564-ND/5291228" 600 950 60 H I C CNN "PurchasingLink2"
+F5 "RMCF0805JT200RCT-ND" 0 0 60 H I C CNN "MPN"
+F6 "Value" 0 0 60 H I C CNN "Package"
+F7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" 480 400 60 H I C CNN "PurchasingLink"
+$FPLIST
+ R_*
+ Resistor_*
+$ENDFPLIST
 DRAW
-S 150 250 -150 -150 0 1 0 f
-X 1 1 350 200 200 L 50 50 1 1 P
-X 2 2 350 100 200 L 50 50 1 1 P
-X 3 3 350 0 200 L 50 50 1 1 P
-X 4 4 350 -100 200 L 50 50 1 1 P
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Ultrafit_2
+#
+DEF Ultrafit_2 J 0 40 Y Y 1 F N
+F0 "J" 0 150 60 H V C CNN
+F1 "Ultrafit_2" 100 -200 60 H V C CNN
+F2 "footprints:Ultrafit_2" -100 50 60 H I C CNN
+F3 "" 0 150 60 H I C CNN
+F4 "https://www.digikey.com/product-detail/en/molex-llc/1722861102/WM11570-ND/5344267" 100 250 60 H I C CNN "PurchasingLink"
+F5 "Digi-Key" 200 350 60 H I C CNN "MFN"
+F6 "WM11570-ND" 300 450 60 H I C CNN "MPN"
+F7 "Value" 400 550 60 H I C CNN "Package"
+DRAW
+S 150 -100 -150 100 0 1 0 f
+X 1 1 250 50 100 L 50 50 1 1 B
+X 2 2 250 -50 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
