@@ -1,11 +1,14 @@
 Purchasing Links
 sd card slot  - https://www.digikey.com/product-detail/en/molex-llc/5045280892/WM12730CT-ND/5822266
 gps chip      - https://www.adafruit.com/product/746
+radio c
 
 BreadBoard Components:
 accelerometer - https://www.adafruit.com/product/2019
 sd card slot  - https://www.sparkfun.com/products/544
 cpu (sparkFun)- https://www.sparkfun.com/products/9061
 AVR Programmer- https://www.sparkfun.com/products/9825
+Breakout Radio Chips (need 2) - https://www.sparkfun.com/products/12775
+
 
 
