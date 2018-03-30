@@ -1,7 +1,15 @@
 Purchasing Links
 sd card slot  - https://www.digikey.com/product-detail/en/molex-llc/5045280892/WM12730CT-ND/5822266
 gps chip      - https://www.adafruit.com/product/746
-radio c
+3.3V stepdown - https://www.digikey.com/product-detail/en/on-semiconductor/FAN5362UMP33X/FAN5362UMP33XCT-ND/3908079
+--Option 2    - https://www.digikey.com/product-detail/en/stmicroelectronics/L6932D1.2TR/497-5724-1-ND/1299970
+battery holder- https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BCAAPC/BCAAPC-ND/232723
+MOSFET	      - https://www.digikey.com/product-detail/en/vishay-siliconix/SI4838DY-T1-E3/SI4838DY-T1-E3TR-ND/1656477
+Batteries and
+Charger       - https://www.amazon.com/EBL-Battery-Charger-Rechargeable-Batteries/dp/B076C4K4SR
+MicroSD Card
+Slot 	      - https://www.digikey.com/product-detail/en/molex-llc/5045280892/WM12730CT-ND/5822266
+
 
 BreadBoard Components:
 accelerometer - https://www.adafruit.com/product/2019
@@ -12,3 +20,5 @@ Breakout Radio Chips (need 2) - https://www.sparkfun.com/products/12775
 
 
 
+Spark plug via mosfet
+http://forum.arduino.cc/index.php?topic=95811.0
