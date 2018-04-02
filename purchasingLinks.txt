@@ -17,7 +17,8 @@ sd card slot  - https://www.sparkfun.com/products/544
 cpu (sparkFun)- https://www.sparkfun.com/products/9061
 AVR Programmer- https://www.sparkfun.com/products/9825
 Breakout Radio Chips (need 2) - https://www.sparkfun.com/products/12775
-
+Sparkfun RF Link Transmitter - https://www.sparkfun.com/products/10534
+Sparkfun RF Link Receiver - https://www.sparkfun.com/products/10532
 
 
 Spark plug via mosfet
