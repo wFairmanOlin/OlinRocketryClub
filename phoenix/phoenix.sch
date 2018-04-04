@@ -74,7 +74,7 @@ L ATMEGA328P-AU U1
 U 1 1 5A8B2ED4
 P 19200 2600
 F 0 "U1" H 18450 3850 50  0000 L BNN
-F 1 "ATMEGA328P-AU" H 19600 1200 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 19450 1200 50  0000 L BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 19200 2600 50  0001 C CIN
 F 3 "" H 19200 2600 50  0001 C CNN
 	1    19200 2600
@@ -117,8 +117,6 @@ F 3 "" H 16550 6500 50  0001 C CNN
 	1    16550 6500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	16550 6500 16550 6350
 Text Label 16950 6350 0    60   ~ 0
 GND
 $Comp
@@ -132,8 +130,6 @@ F 3 "" H 16950 6500 50  0001 C CNN
 	1    16950 6500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	16950 6500 16950 6350
 $Comp
 L PWR_FLAG #FLG?
 U 1 1 5ABBECDC
@@ -219,17 +215,6 @@ F 7 "https://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1
 	1    18000 2000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	18150 1300 18150 1600
-Wire Wire Line
-	18000 1500 18300 1500
-Wire Wire Line
-	18150 1600 18300 1600
-Connection ~ 18150 1500
-Wire Wire Line
-	18000 1800 18300 1800
-Wire Wire Line
-	18000 1850 18000 1800
 NoConn ~ 18300 2100
 $Comp
 L GND #PWR?
@@ -253,16 +238,6 @@ F 3 "" H 16250 6400 50  0001 C CNN
 	1    16250 6400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	18300 3600 18200 3600
-Wire Wire Line
-	18200 3600 18200 3950
-Wire Wire Line
-	18300 3700 18200 3700
-Connection ~ 18200 3700
-Wire Wire Line
-	18300 3800 18200 3800
-Connection ~ 18200 3800
 $Comp
 L GND #PWR?
 U 1 1 5ABBF579
@@ -297,8 +272,6 @@ Text Label 16900 5700 2    60   ~ 0
 RESET
 Text Label 20650 2950 0    60   ~ 0
 RESET
-Wire Wire Line
-	20200 2950 20650 2950
 $Comp
 L R_10k R?
 U 1 1 5ABBFB31
@@ -314,9 +287,6 @@ F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 209
 	1    20500 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20500 2900 20500 2950
-Connection ~ 20500 2950
 Text Label 20500 2600 0    60   ~ 0
 VCC
 Text Label 17400 5500 0    60   ~ 0
@@ -334,10 +304,6 @@ F 3 "" H 17450 5750 50  0001 C CNN
 	1    17450 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	17400 5700 17450 5700
-Wire Wire Line
-	17450 5700 17450 5750
 NoConn ~ 18950 5350
 NoConn ~ 18950 6150
 NoConn ~ 18950 6250
@@ -353,10 +319,6 @@ F 3 "" H 18600 5950 50  0001 C CNN
 	1    18600 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	18600 5950 18600 5850
-Wire Wire Line
-	18600 5850 18950 5850
 $Comp
 L LED_0805 D?
 U 1 1 5ABC351F
@@ -398,8 +360,6 @@ F 3 "" H 15750 5800 50  0001 C CNN
 	1    15750 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15750 5350 15750 5500
 $Comp
 L LED_0805 D?
 U 1 1 5ABC379F
@@ -441,8 +401,6 @@ F 3 "" H 16100 5800 50  0001 C CNN
 	1    16100 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	16100 5350 16100 5500
 $Comp
 L LED_0805 D?
 U 1 1 5ABC380C
@@ -484,8 +442,6 @@ F 3 "" H 15400 5800 50  0001 C CNN
 	1    15400 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	15400 5350 15400 5500
 Text Label 15400 5050 1    60   ~ 0
 PLED1
 Text Label 15750 5050 1    60   ~ 0
@@ -498,22 +454,6 @@ Text Label 20200 2450 0    60   ~ 0
 PLED2
 Text Label 20200 2550 0    60   ~ 0
 PLED3
-Wire Notes Line
-	15100 6100 15100 4600
-Wire Notes Line
-	15100 4600 16350 4600
-Wire Notes Line
-	16350 4600 16350 6100
-Wire Notes Line
-	16350 6100 15100 6100
-Wire Notes Line
-	18400 6550 20800 6550
-Wire Notes Line
-	20800 6550 20800 4900
-Wire Notes Line
-	20800 4900 18400 4900
-Wire Notes Line
-	18400 4900 18400 6550
 Text Notes 15100 4550 0    79   ~ 0
 Programming LEDs
 Text Notes 18400 4850 0    79   ~ 0
@@ -554,39 +494,25 @@ NoConn ~ 12950 5400
 NoConn ~ 10550 5500
 NoConn ~ 12950 5600
 NoConn ~ 10550 6000
-Wire Wire Line
-	13050 5500 12950 5500
 $Comp
 L C_0.1uF C?
 U 1 1 5AC40F79
-P 9100 5750
-F 0 "C?" H 9125 5850 50  0000 L CNN
-F 1 "C_0.1uF" H 9125 5650 50  0000 L CNN
-F 2 "footprints:C_0805_OEM" H 9138 5600 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 9125 5850 50  0001 C CNN
-F 4 "478-3352-1-ND" H 9100 5750 60  0001 C CNN "MPN"
-F 5 "Digi-Key" H 9100 5750 60  0001 C CNN "MFN"
-F 6 "Value" H 9100 5750 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 9525 6250 60  0001 C CNN "PurchasingLink"
-	1    9100 5750
+P 9250 5600
+F 0 "C?" H 9275 5700 50  0000 L CNN
+F 1 "C_0.1uF" H 9275 5500 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9288 5450 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 9275 5700 50  0001 C CNN
+F 4 "478-3352-1-ND" H 9250 5600 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 9250 5600 60  0001 C CNN "MFN"
+F 6 "Value" H 9250 5600 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 9675 6100 60  0001 C CNN "PurchasingLink"
+	1    9250 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 5900 9100 6150
-Connection ~ 9100 6000
-Text Label 9100 6150 3    60   ~ 0
+Text Label 9250 6000 3    60   ~ 0
 GND
-Wire Wire Line
-	9100 5600 9100 5450
-Connection ~ 9100 5600
-Text Label 9100 5450 1    60   ~ 0
+Text Label 9250 5300 1    60   ~ 0
 VCC
-Wire Wire Line
-	10550 5300 10550 5050
-Wire Wire Line
-	10550 5050 13050 5050
-Wire Wire Line
-	13050 5050 13050 5500
 $Comp
 L R_10k R?
 U 1 1 5AC414DA
@@ -607,23 +533,23 @@ VCC
 $Comp
 L C_0.1uF C?
 U 1 1 5AC416EE
-P 9600 5750
-F 0 "C?" H 9625 5850 50  0000 L CNN
-F 1 "C_0.1uF" H 9625 5650 50  0000 L CNN
-F 2 "footprints:C_0805_OEM" H 9638 5600 50  0001 C CNN
-F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 9625 5850 50  0001 C CNN
-F 4 "478-3352-1-ND" H 9600 5750 60  0001 C CNN "MPN"
-F 5 "Digi-Key" H 9600 5750 60  0001 C CNN "MFN"
-F 6 "Value" H 9600 5750 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 10025 6250 60  0001 C CNN "PurchasingLink"
-	1    9600 5750
+P 9650 5600
+F 0 "C?" H 9675 5700 50  0000 L CNN
+F 1 "C_0.1uF" H 9675 5500 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9688 5450 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 9675 5700 50  0001 C CNN
+F 4 "478-3352-1-ND" H 9650 5600 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 9650 5600 60  0001 C CNN "MFN"
+F 6 "Value" H 9650 5600 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 10075 6100 60  0001 C CNN "PurchasingLink"
+	1    9650 5600
 	1    0    0    -1  
 $EndComp
-Text Label 9600 5600 1    60   ~ 0
+Text Label 9650 5450 1    60   ~ 0
 BYP
 Text Label 10550 5400 2    60   ~ 0
 BYP
-Text Label 9600 5900 3    60   ~ 0
+Text Label 9650 5750 3    60   ~ 0
 GND
 Text Label 10550 5700 2    60   ~ 0
 GND
@@ -639,8 +565,6 @@ Text Label 12950 5800 0    60   ~ 0
 INT1
 Text Label 12950 6000 0    60   ~ 0
 INT2
-Wire Wire Line
-	10200 5900 10550 5900
 Text Label 20200 2750 0    60   ~ 0
 SDA
 Text Label 20200 2850 0    60   ~ 0
@@ -676,8 +600,212 @@ F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/47
 $EndComp
 Text Label 10200 2400 3    60   ~ 0
 VIN
+$Comp
+L 5K R?
+U 1 1 5AC3FF90
+P 10600 2550
+F 0 "R?" V 10680 2550 50  0000 C CNN
+F 1 "5K" V 10600 2550 50  0000 C CNN
+F 2 "" V 10530 2550 50  0001 C CNN
+F 3 "" H 10600 2550 50  0001 C CNN
+	1    10600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5K R?
+U 1 1 5AC404C1
+P 10600 2150
+F 0 "R?" V 10680 2150 50  0000 C CNN
+F 1 "9K" V 10600 2150 50  0000 C CNN
+F 2 "" V 10530 2150 50  0001 C CNN
+F 3 "" H 10600 2150 50  0001 C CNN
+	1    10600 2150
+	1    0    0    -1  
+$EndComp
+Text Label 10600 2000 1    60   ~ 0
+VCC
+Text Label 11050 2450 2    60   ~ 0
+VCC
+Text Label 10600 2700 3    60   ~ 0
+GND
 Text Label 11050 2250 2    60   ~ 0
 VIN
 Text Label 11050 2150 2    60   ~ 0
 VIN
+$Comp
+L C_10uF C?
+U 1 1 5AC40A51
+P 9800 2250
+F 0 "C?" H 9825 2350 50  0000 L CNN
+F 1 "C_10uF" H 9825 2150 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9838 2100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/cx5r.pdf" H 9825 2350 50  0001 C CNN
+F 4 "478-5167-1-ND" H 9800 2250 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 9800 2250 60  0001 C CNN "MFN"
+F 6 "Value" H 9800 2250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/478-5167-1-ND/1913257" H 10225 2750 60  0001 C CNN "PurchasingLink"
+	1    9800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16550 6500 16550 6350
+Wire Wire Line
+	16950 6500 16950 6350
+Wire Wire Line
+	18150 1300 18150 1600
+Wire Wire Line
+	18000 1500 18300 1500
+Wire Wire Line
+	18150 1600 18300 1600
+Connection ~ 18150 1500
+Wire Wire Line
+	18000 1800 18300 1800
+Wire Wire Line
+	18000 1850 18000 1800
+Wire Wire Line
+	18300 3600 18200 3600
+Wire Wire Line
+	18200 3600 18200 3950
+Wire Wire Line
+	18300 3700 18200 3700
+Connection ~ 18200 3700
+Wire Wire Line
+	18300 3800 18200 3800
+Connection ~ 18200 3800
+Wire Wire Line
+	20200 2950 20650 2950
+Wire Wire Line
+	20500 2900 20500 2950
+Connection ~ 20500 2950
+Wire Wire Line
+	17400 5700 17450 5700
+Wire Wire Line
+	17450 5700 17450 5750
+Wire Wire Line
+	18600 5950 18600 5850
+Wire Wire Line
+	18600 5850 18950 5850
+Wire Wire Line
+	15750 5350 15750 5500
+Wire Wire Line
+	16100 5350 16100 5500
+Wire Wire Line
+	15400 5350 15400 5500
+Wire Notes Line
+	15100 6100 15100 4600
+Wire Notes Line
+	15100 4600 16350 4600
+Wire Notes Line
+	16350 4600 16350 6100
+Wire Notes Line
+	16350 6100 15100 6100
+Wire Notes Line
+	18400 6550 20800 6550
+Wire Notes Line
+	20800 6550 20800 4900
+Wire Notes Line
+	20800 4900 18400 4900
+Wire Notes Line
+	18400 4900 18400 6550
+Wire Wire Line
+	13050 5500 12950 5500
+Wire Wire Line
+	9250 5750 9250 6000
+Connection ~ 9250 5850
+Wire Wire Line
+	9250 5450 9250 5300
+Connection ~ 9250 5450
+Wire Wire Line
+	10550 5300 10550 5050
+Wire Wire Line
+	10550 5050 13050 5050
+Wire Wire Line
+	13050 5050 13050 5500
+Wire Wire Line
+	10200 5900 10550 5900
+Wire Wire Line
+	10600 2300 10600 2400
+Connection ~ 10600 2350
+Wire Wire Line
+	10600 2350 11050 2350
+Wire Wire Line
+	13250 2150 13250 2450
+Connection ~ 13250 2250
+Connection ~ 13250 2350
+Wire Wire Line
+	13250 2250 13350 2250
+Text Label 13350 2250 0    60   ~ 0
+GND
+Text Label 9800 2100 1    60   ~ 0
+VOUT
+Text Label 9800 2400 3    60   ~ 0
+GND
+$Comp
+L SI4838DY U?
+U 1 1 5AC427B1
+P 6150 2150
+F 0 "U?" H 6150 2300 60  0000 C CNN
+F 1 "SI4838DY" H 6150 2000 60  0000 C CNN
+F 2 "" H 6150 2150 60  0001 C CNN
+F 3 "" H 6150 2300 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/vishay-siliconix/SI4838DY-T1-E3/SI4838DY-T1-E3TR-ND/1656477" H 6250 2400 60  0001 C CNN "purchasingLinks"
+	1    6150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2000 5550 2200
+Connection ~ 5550 2100
+Wire Wire Line
+	5550 2100 5400 2100
+Wire Wire Line
+	6750 2000 6750 2300
+Connection ~ 6750 2100
+Connection ~ 6750 2200
+Wire Wire Line
+	6750 2100 6900 2100
+Text Label 20550 3800 0    60   ~ 0
+SEPERATE
+Wire Wire Line
+	20200 3800 20550 3800
+$Comp
+L R_10k R?
+U 1 1 5AC43E0B
+P 20350 3950
+F 0 "R?" V 20430 3950 50  0000 C CNN
+F 1 "R_10k" V 20250 3950 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 20280 3950 50  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/CRS.pdf" H 20430 3950 50  0001 C CNN
+F 4 "CRS0805-FX-1002ELFCT-ND" H 20350 3950 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 20350 3950 60  0001 C CNN "MFN"
+F 6 "Value" H 20350 3950 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 20830 4350 60  0001 C CNN "PurchasingLink"
+	1    20350 3950
+	1    0    0    -1  
+$EndComp
+Text Label 20350 4100 3    60   ~ 0
+GND
+Connection ~ 20350 3800
+Text Label 5550 2300 2    60   ~ 0
+SEPERATE
+Text Label 5400 2100 2    60   ~ 0
+GND
+$Comp
+L R_200 ROCKET_IGNITER
+U 1 1 5AC44892
+P 7050 2100
+F 0 "ROCKET_IGNITER" V 7150 2300 50  0000 C CNN
+F 1 "R_200" V 6950 2100 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 6980 2100 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 7130 2100 50  0001 C CNN
+F 4 "Digi-Key" H 7050 2100 60  0001 C CNN "MFN"
+F 5 "RMCF0805JT200RCT-ND" H 7050 2100 60  0001 C CNN "MPN"
+F 6 "Value" H 7050 2100 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 7530 2500 60  0001 C CNN "PurchasingLink"
+	1    7050 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2100 7600 2100
+Text Label 7600 2100 0    60   ~ 0
+VCC
 $EndSCHEMATC
