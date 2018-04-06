@@ -1,4 +1,4 @@
-# Most recent update
+## Most recent update
 4/6/2018 This program currently only contains code for logging data to the SD card. 
 We are successfully accessing IMU data, but we are having issues with the SD card reader 
 itself - even the arduino example script will not run, suggesting there is a hardware or
