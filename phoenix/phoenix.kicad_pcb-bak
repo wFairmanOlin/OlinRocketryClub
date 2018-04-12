@@ -162,7 +162,7 @@
   )
 
   (module rocketry:battery_holder (layer B.Cu) (tedit 5AA5BC3D) (tstamp 5AA5C79E)
-    (at 112.522 63.246)
+    (at 112.522 64.643)
     (fp_text reference REF** (at -0.254 -9.398) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
