@@ -808,4 +808,78 @@ Wire Wire Line
 	7200 2100 7600 2100
 Text Label 7600 2100 0    60   ~ 0
 VCC
+Text Notes 10650 4750 0    60   ~ 0
+Accelerometer
+Text Notes 11400 1600 0    60   ~ 0
+Linear Regulator\n
+Text Notes 5700 1750 0    60   ~ 0
+N-Channel Transistor\n
+$Comp
+L Crystal_SMD Y?
+U 1 1 5ACEF03D
+P 21650 2000
+F 0 "Y?" H 21700 2175 50  0000 L CNN
+F 1 "Crystal_SMD" H 21300 2300 50  0000 L CNN
+F 2 "footprints:Crystal_SMD_FA238" H 21600 2075 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf" H 21700 2175 50  0001 C CNN
+F 4 "Digi-Key" H 21650 2000 60  0001 C CNN "MFN"
+F 5 "SER3686CT-ND" H 21650 2000 60  0001 C CNN "MPN"
+F 6 "Value" H 21650 2000 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=SER3686CT-ND" H 22100 2575 60  0001 C CNN "PurchasingLink"
+	1    21650 2000
+	1    0    0    -1  
+$EndComp
+Text Label 21950 1750 0    60   ~ 0
+GND
+Text Label 21650 2400 0    60   ~ 0
+GND
+$Comp
+L C_30pF C?
+U 1 1 5ACF00B7
+P 21400 2150
+F 0 "C?" H 21425 2250 50  0000 L CNN
+F 1 "C_30pF" H 21425 2050 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 21438 2000 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 21425 2250 50  0001 C CNN
+F 4 "1276-1130-1-ND" H 21400 2150 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 21400 2150 60  0001 C CNN "MFN"
+F 6 "Value" H 21400 2150 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL21C300JBANNNC/1276-1130-1-ND/3889216" H 21825 2650 60  0001 C CNN "PurchasingLink"
+	1    21400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_30pF C?
+U 1 1 5ACF0160
+P 21900 2150
+F 0 "C?" H 21925 2250 50  0000 L CNN
+F 1 "C_30pF" H 21925 2050 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 21938 2000 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 21925 2250 50  0001 C CNN
+F 4 "1276-1130-1-ND" H 21900 2150 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 21900 2150 60  0001 C CNN "MFN"
+F 6 "Value" H 21900 2150 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL21C300JBANNNC/1276-1130-1-ND/3889216" H 22325 2650 60  0001 C CNN "PurchasingLink"
+	1    21900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21750 2000 22050 2000
+Connection ~ 21400 2000
+Wire Wire Line
+	21300 2000 21550 2000
+Text Label 21300 2000 2    60   ~ 0
+PB6
+Connection ~ 21900 2000
+Text Label 22050 2000 0    60   ~ 0
+PB7
+Wire Wire Line
+	21650 1850 21650 1750
+Wire Wire Line
+	21650 1750 21950 1750
+Wire Wire Line
+	21650 2150 21650 2400
+Wire Wire Line
+	21400 2300 21900 2300
+Connection ~ 21650 2300
 $EndSCHEMATC

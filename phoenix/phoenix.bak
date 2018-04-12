@@ -74,7 +74,7 @@ L ATMEGA328P-AU U1
 U 1 1 5A8B2ED4
 P 19200 2600
 F 0 "U1" H 18450 3850 50  0000 L BNN
-F 1 "ATMEGA328P-AU" H 19600 1200 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 19450 1200 50  0000 L BNN
 F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 19200 2600 50  0001 C CIN
 F 3 "" H 19200 2600 50  0001 C CNN
 	1    19200 2600
@@ -757,14 +757,55 @@ Wire Wire Line
 Connection ~ 5550 2100
 Wire Wire Line
 	5550 2100 5400 2100
-Text Label 5400 2100 2    60   ~ 0
-VCC
 Wire Wire Line
 	6750 2000 6750 2300
 Connection ~ 6750 2100
 Connection ~ 6750 2200
 Wire Wire Line
 	6750 2100 6900 2100
-Text Label 6900 2100 0    60   ~ 0
+Text Label 20550 3800 0    60   ~ 0
+SEPERATE
+Wire Wire Line
+	20200 3800 20550 3800
+$Comp
+L R_10k R?
+U 1 1 5AC43E0B
+P 20350 3950
+F 0 "R?" V 20430 3950 50  0000 C CNN
+F 1 "R_10k" V 20250 3950 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 20280 3950 50  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/CRS.pdf" H 20430 3950 50  0001 C CNN
+F 4 "CRS0805-FX-1002ELFCT-ND" H 20350 3950 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 20350 3950 60  0001 C CNN "MFN"
+F 6 "Value" H 20350 3950 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 20830 4350 60  0001 C CNN "PurchasingLink"
+	1    20350 3950
+	1    0    0    -1  
+$EndComp
+Text Label 20350 4100 3    60   ~ 0
 GND
+Connection ~ 20350 3800
+Text Label 5550 2300 2    60   ~ 0
+SEPERATE
+Text Label 5400 2100 2    60   ~ 0
+GND
+$Comp
+L R_200 ROCKET_IGNITER
+U 1 1 5AC44892
+P 7050 2100
+F 0 "ROCKET_IGNITER" V 7150 2300 50  0000 C CNN
+F 1 "R_200" V 6950 2100 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 6980 2100 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 7130 2100 50  0001 C CNN
+F 4 "Digi-Key" H 7050 2100 60  0001 C CNN "MFN"
+F 5 "RMCF0805JT200RCT-ND" H 7050 2100 60  0001 C CNN "MPN"
+F 6 "Value" H 7050 2100 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 7530 2500 60  0001 C CNN "PurchasingLink"
+	1    7050 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2100 7600 2100
+Text Label 7600 2100 0    60   ~ 0
+VCC
 $EndSCHEMATC
