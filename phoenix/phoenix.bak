@@ -886,4 +886,16 @@ F 4 "https://www.sparkfun.com/products/10534" H 12150 3050 60  0001 C CNN "Purch
 	1    11800 3600
 	1    0    0    -1  
 $EndComp
+$Comp
+L ADX377 U?
+U 1 1 5AD0D49E
+P 8750 4050
+F 0 "U?" H 8250 4800 60  0000 C CNN
+F 1 "ADX377" H 8300 3200 60  0000 C CNN
+F 2 "rocketry:ADXL377" H 8750 4450 60  0001 C CNN
+F 3 "" H 8750 4450 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/analog-devices-inc/ADXL377BCPZ-RL7/ADXL377BCPZ-RL7CT-ND/3678489" H 8500 4900 60  0001 C CNN "PurchasingLinks"
+	1    8750 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

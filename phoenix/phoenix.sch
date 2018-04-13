@@ -898,4 +898,26 @@ F 4 "https://www.digikey.com/product-detail/en/analog-devices-inc/ADXL377BCPZ-RL
 	1    8750 4050
 	1    0    0    -1  
 $EndComp
+Text Label 8950 3900 0    60   ~ 0
+GND
+Text Label 8950 3800 0    60   ~ 0
+GND
+Text Label 8950 3300 0    60   ~ 0
+GND
+Text Label 8950 3500 0    60   ~ 0
+GND
+NoConn ~ 8950 4000
+NoConn ~ 8950 4100
+NoConn ~ 8950 4200
+NoConn ~ 8950 4300
+NoConn ~ 8950 4400
+NoConn ~ 8950 4500
+Text Label 8950 4600 0    60   ~ 0
+3.3V
+Text Label 8950 4700 0    60   ~ 0
+3.3V
+Text Label 12100 3600 0    60   ~ 0
+GND
+Text Label 12100 3800 0    60   ~ 0
+3.3V
 $EndSCHEMATC
