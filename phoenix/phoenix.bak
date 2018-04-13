@@ -1,4 +1,36 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:rocketry
 LIBS:phoenix-cache
 EELAYER 25 0
@@ -419,16 +451,16 @@ Micro SD-Card Reader
 $Comp
 L Ultrafit_2 J1
 U 1 1 5ABC44C9
-P 6900 1400
-F 0 "J1" H 6900 1550 60  0000 C CNN
-F 1 "Ultrafit_2" H 7000 1200 60  0000 C CNN
-F 2 "rocketry:Ultrafit_2_RA" H 6800 1450 60  0001 C CNN
-F 3 "" H 6900 1550 60  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/molex-llc/1722861102/WM11570-ND/5344267" H 7000 1650 60  0001 C CNN "PurchasingLink"
-F 5 "Digi-Key" H 7100 1750 60  0001 C CNN "MFN"
-F 6 "WM11570-ND" H 7200 1850 60  0001 C CNN "MPN"
-F 7 "Value" H 7300 1950 60  0001 C CNN "Package"
-	1    6900 1400
+P 9550 1850
+F 0 "J1" H 9550 2000 60  0000 C CNN
+F 1 "Ultrafit_2" H 9650 1650 60  0000 C CNN
+F 2 "rocketry:Ultrafit_2_RA" H 9450 1900 60  0001 C CNN
+F 3 "" H 9550 2000 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/molex-llc/1722861102/WM11570-ND/5344267" H 9650 2100 60  0001 C CNN "PurchasingLink"
+F 5 "Digi-Key" H 9750 2200 60  0001 C CNN "MFN"
+F 6 "WM11570-ND" H 9850 2300 60  0001 C CNN "MPN"
+F 7 "Value" H 9950 2400 60  0001 C CNN "Package"
+	1    9550 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -522,73 +554,73 @@ SCL
 $Comp
 L L6932D1.2 U4
 U 1 1 5AC43804
-P 11050 2150
-F 0 "U4" H 12150 2550 60  0000 C CNN
-F 1 "L6932D1.2" H 12150 2450 60  0000 C CNN
-F 2 "rocketry:L6932D1.2TR" H 12150 2390 60  0001 C CNN
-F 3 "" H 12150 2550 60  0000 C CNN
-F 4 "https://www.digikey.com/product-detail/en/stmicroelectronics/L6932D1.2TR/497-5724-1-ND/1299970" H 12250 2650 60  0001 C CNN "purchasingLink"
-	1    11050 2150
+P 12650 2150
+F 0 "U4" H 13750 2550 60  0000 C CNN
+F 1 "L6932D1.2" H 13750 2450 60  0000 C CNN
+F 2 "rocketry:L6932D1.2TR" H 13750 2390 60  0001 C CNN
+F 3 "" H 13750 2550 60  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/stmicroelectronics/L6932D1.2TR/497-5724-1-ND/1299970" H 13850 2650 60  0001 C CNN "purchasingLink"
+	1    12650 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_10uF C4
 U 1 1 5AC43E21
-P 10200 2250
-F 0 "C4" H 10225 2350 50  0000 L CNN
-F 1 "C_10uF" H 10225 2150 50  0000 L CNN
-F 2 "rocketry:C_0805_OEM" H 10238 2100 50  0001 C CNN
-F 3 "http://datasheets.avx.com/cx5r.pdf" H 10225 2350 50  0001 C CNN
-F 4 "478-5167-1-ND" H 10200 2250 60  0001 C CNN "MPN"
-F 5 "Digi-Key" H 10200 2250 60  0001 C CNN "MFN"
-F 6 "Value" H 10200 2250 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/478-5167-1-ND/1913257" H 10625 2750 60  0001 C CNN "PurchasingLink"
-	1    10200 2250
+P 11800 2250
+F 0 "C4" H 11825 2350 50  0000 L CNN
+F 1 "C_10uF" H 11825 2150 50  0000 L CNN
+F 2 "rocketry:C_0805_OEM" H 11838 2100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/cx5r.pdf" H 11825 2350 50  0001 C CNN
+F 4 "478-5167-1-ND" H 11800 2250 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 11800 2250 60  0001 C CNN "MFN"
+F 6 "Value" H 11800 2250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/478-5167-1-ND/1913257" H 12225 2750 60  0001 C CNN "PurchasingLink"
+	1    11800 2250
 	1    0    0    -1  
 $EndComp
-Text Label 10200 2100 1    60   ~ 0
+Text Label 11800 2100 1    60   ~ 0
 VIN
 $Comp
 L 5K R3
 U 1 1 5AC3FF90
-P 10600 2550
-F 0 "R3" V 10680 2550 50  0000 C CNN
-F 1 "5K" V 10600 2550 50  0000 C CNN
-F 2 "rocketry:R_0805_OEM" V 10530 2550 50  0001 C CNN
-F 3 "" H 10600 2550 50  0001 C CNN
-	1    10600 2550
+P 12200 2550
+F 0 "R3" V 12280 2550 50  0000 C CNN
+F 1 "5K" V 12200 2550 50  0000 C CNN
+F 2 "rocketry:R_0805_OEM" V 12130 2550 50  0001 C CNN
+F 3 "" H 12200 2550 50  0001 C CNN
+	1    12200 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L 5K R2
 U 1 1 5AC404C1
-P 10600 2150
-F 0 "R2" V 10680 2150 50  0000 C CNN
-F 1 "9K" V 10600 2150 50  0000 C CNN
-F 2 "rocketry:R_0805_OEM" V 10530 2150 50  0001 C CNN
-F 3 "" H 10600 2150 50  0001 C CNN
-	1    10600 2150
+P 12200 2150
+F 0 "R2" V 12280 2150 50  0000 C CNN
+F 1 "9K" V 12200 2150 50  0000 C CNN
+F 2 "rocketry:R_0805_OEM" V 12130 2150 50  0001 C CNN
+F 3 "" H 12200 2150 50  0001 C CNN
+	1    12200 2150
 	1    0    0    -1  
 $EndComp
-Text Label 10600 2700 3    60   ~ 0
+Text Label 12200 2700 3    60   ~ 0
 GND
-Text Label 11050 2250 2    60   ~ 0
+Text Label 12650 2250 2    60   ~ 0
 VIN
-Text Label 11050 2150 2    60   ~ 0
+Text Label 12650 2150 2    60   ~ 0
 VIN
 $Comp
 L C_10uF C3
 U 1 1 5AC40A51
-P 9800 2250
-F 0 "C3" H 9825 2350 50  0000 L CNN
-F 1 "C_10uF" H 9825 2150 50  0000 L CNN
-F 2 "rocketry:C_0805_OEM" H 9838 2100 50  0001 C CNN
-F 3 "http://datasheets.avx.com/cx5r.pdf" H 9825 2350 50  0001 C CNN
-F 4 "478-5167-1-ND" H 9800 2250 60  0001 C CNN "MPN"
-F 5 "Digi-Key" H 9800 2250 60  0001 C CNN "MFN"
-F 6 "Value" H 9800 2250 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/478-5167-1-ND/1913257" H 10225 2750 60  0001 C CNN "PurchasingLink"
-	1    9800 2250
+P 11400 2250
+F 0 "C3" H 11425 2350 50  0000 L CNN
+F 1 "C_10uF" H 11425 2150 50  0000 L CNN
+F 2 "rocketry:C_0805_OEM" H 11438 2100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/cx5r.pdf" H 11425 2350 50  0001 C CNN
+F 4 "478-5167-1-ND" H 11400 2250 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 11400 2250 60  0001 C CNN "MFN"
+F 6 "Value" H 11400 2250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/avx-corporation/0805ZD106KAT2A/478-5167-1-ND/1913257" H 11825 2750 60  0001 C CNN "PurchasingLink"
+	1    11400 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -662,42 +694,20 @@ Wire Wire Line
 Wire Wire Line
 	10200 5900 10550 5900
 Wire Wire Line
-	10600 2300 10600 2400
-Connection ~ 10600 2350
+	12200 2300 12200 2400
+Connection ~ 12200 2350
 Wire Wire Line
-	10600 2350 11050 2350
+	12200 2350 12650 2350
 Wire Wire Line
-	13250 2150 13250 2450
-Connection ~ 13250 2250
-Connection ~ 13250 2350
+	14850 2150 14850 2450
+Connection ~ 14850 2250
+Connection ~ 14850 2350
 Wire Wire Line
-	13250 2250 13350 2250
-Text Label 13350 2250 0    60   ~ 0
+	14850 2250 14950 2250
+Text Label 14950 2250 0    60   ~ 0
 GND
-Text Label 9800 2400 3    60   ~ 0
+Text Label 11400 2400 3    60   ~ 0
 GND
-$Comp
-L SI4838DY U2
-U 1 1 5AC427B1
-P 6150 2150
-F 0 "U2" H 6150 2300 60  0000 C CNN
-F 1 "SI4838DY" H 6150 2000 60  0000 C CNN
-F 2 "rocketry:IRLML6344TRPBFCT-ND" H 6150 2150 60  0001 C CNN
-F 3 "" H 6150 2300 60  0001 C CNN
-F 4 "https://www.digikey.com/product-detail/en/vishay-siliconix/SI4838DY-T1-E3/SI4838DY-T1-E3TR-ND/1656477" H 6250 2400 60  0001 C CNN "purchasingLinks"
-	1    6150 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 2000 5550 2200
-Connection ~ 5550 2100
-Wire Wire Line
-	5550 2100 5400 2100
-Wire Wire Line
-	6750 2000 6750 2300
-Connection ~ 6750 2100
-Wire Wire Line
-	6750 2100 7250 2100
 Text Label 20550 3800 0    60   ~ 0
 SEPERATE
 Wire Wire Line
@@ -720,15 +730,15 @@ $EndComp
 Text Label 20350 4100 3    60   ~ 0
 GND
 Connection ~ 20350 3800
-Text Label 5550 2300 2    60   ~ 0
+Text Label 9600 2450 2    60   ~ 0
 SEPERATE
-Text Label 5400 2100 2    60   ~ 0
+Text Label 9900 2650 3    60   ~ 0
 GND
 Text Notes 10650 4750 0    60   ~ 0
 Accelerometer
-Text Notes 11400 1600 0    60   ~ 0
+Text Notes 13000 1600 0    60   ~ 0
 Linear Regulator\n
-Text Notes 5700 1750 0    60   ~ 0
+Text Notes 8350 2200 0    60   ~ 0
 N-Channel Transistor\n
 $Comp
 L Crystal_SMD Y1
@@ -799,10 +809,7 @@ Wire Wire Line
 	21400 2300 21900 2300
 Connection ~ 21650 2300
 Wire Wire Line
-	7250 2100 7250 1450
-Wire Wire Line
-	7250 1450 7150 1450
-Connection ~ 6750 2200
+	9900 1900 9800 1900
 NoConn ~ 18300 2950
 NoConn ~ 18300 2850
 NoConn ~ 20200 3700
@@ -840,17 +847,31 @@ Wire Wire Line
 Wire Wire Line
 	9800 5450 9800 5550
 Connection ~ 10200 5450
-Text Label 10200 2400 3    60   ~ 0
+Text Label 11800 2400 3    60   ~ 0
 GND
-Text Label 7150 1350 0    60   ~ 0
+Text Label 9800 1800 0    60   ~ 0
 3.3V
-Text Label 10600 2000 2    60   ~ 0
+Text Label 12200 2000 2    60   ~ 0
 3.3V
-Text Label 11050 2450 2    60   ~ 0
+Text Label 12650 2450 2    60   ~ 0
 3.3V
-Text Label 9800 2100 2    60   ~ 0
+Text Label 11400 2100 2    60   ~ 0
 3.3V
 Text Label 20500 2600 0    60   ~ 0
 3.3V
 NoConn ~ 20650 6250
+$Comp
+L IRLML6344 Q1
+U 1 1 5ACFF80D
+P 9800 2450
+F 0 "Q1" H 10000 2525 50  0000 L CNN
+F 1 "IRLML6344" H 10000 2450 50  0001 L CNN
+F 2 "rocketry:IRLML6344TRPBFCT-ND" H 10000 2375 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6344pbf.pdf?fileId=5546d462533600a4015356689c44262c" H 10000 2525 50  0001 L CNN
+F 4 "https://www.digikey.com/product-detail/en/infineon-technologies/IRLML6344TRPBF/IRLML6344TRPBFCT-ND/2538168" H 10100 2625 60  0001 C CNN "PurchasingLinks"
+	1    9800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1900 9900 2250
 $EndSCHEMATC

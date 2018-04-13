@@ -874,4 +874,16 @@ F 4 "https://www.digikey.com/product-detail/en/infineon-technologies/IRLML6344TR
 $EndComp
 Wire Wire Line
 	9900 1900 9900 2250
+$Comp
+L RFTRANS434MHZ U?
+U 1 1 5AD03B3C
+P 11800 3600
+F 0 "U?" H 11800 3200 60  0000 C CNN
+F 1 "RFTRANS434MHZ" H 11800 3800 60  0000 C CNN
+F 2 "rocketry:RFTRANS434MHZ" H 11700 3100 60  0001 C CNN
+F 3 "" H 11800 3200 60  0001 C CNN
+F 4 "https://www.sparkfun.com/products/10534" H 12150 3050 60  0001 C CNN "PurchasingLinks"
+	1    11800 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
