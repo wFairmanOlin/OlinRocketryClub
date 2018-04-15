@@ -171,8 +171,8 @@ ENDDEF
 # ADX377
 #
 DEF ADX377 U 0 40 Y Y 1 F N
-F0 "U" -350 750 60 H V C CNN
-F1 "ADX377" -400 -750 60 H V C CNN
+F0 "U" -500 750 60 H V C CNN
+F1 "ADX377" -450 -850 60 H V C CNN
 F2 "rocketry:ADXL377" 0 400 60 H I C CNN
 F3 "" 0 400 60 H I C CNN
 F4 "https://www.digikey.com/product-detail/en/analog-devices-inc/ADXL377BCPZ-RL7/ADXL377BCPZ-RL7CT-ND/3678489" -250 850 60 H I C CNN "PurchasingLinks"
@@ -193,7 +193,7 @@ X NC 12 200 -350 200 L 50 50 1 1 I
 X NC 13 200 -450 200 L 50 50 1 1 I
 X VS 14 200 -550 200 L 50 50 1 1 I
 X VS 15 200 -650 200 L 50 50 1 1 I
-X VS 16 200 -750 200 L 50 50 1 1 I
+X ZOUT 16 200 -750 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -627,6 +627,33 @@ F4 "0805YC334J4T2A-ND" 0 0 60 H I C CNN "MPN"
 F5 "Digi-Key" 0 0 60 H I C CNN "MFN"
 F6 "Value" 0 0 60 H I C CNN "Package"
 F7 "https://www.digikey.com/products/en/capacitors/ceramic-capacitors/60?k=&pkeyword=&pv405=108&FV=fffc01de%2C400006%2Cmu0.33%C2%B5F%7C2049%2Cffe0003c%2Cc0002&mnonly=0&ColumnSort=0&page=1&quantity=0&ptm=0&fid=0&pageSize=25" 425 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# C_1000pF
+#
+DEF C_1000pF C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C_1000pF" 25 -100 50 H V L CNN
+F2 "footprints:C_0805_OEM" -50 -350 50 H I C CNN
+F3 "" -300 250 50 H I C CNN
+F4 "CAP CER 1UF 25V X7R 0805" 525 600 60 H I C CNN "Description"
+F5 "478-10487-1-ND" 0 -450 60 H I C CNN "MPN"
+F6 "Digi-Key" 0 -550 60 H I C CNN "MFN"
+F7 "Value" 0 0 60 H I C CNN "Package"
+F8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B102KB6WPNC/1276-6843-1-ND/5961702" 425 500 60 H I C CNN "PurchasingLink"
 $FPLIST
  C?
  C_????_*

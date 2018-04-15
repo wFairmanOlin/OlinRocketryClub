@@ -207,6 +207,33 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# C_1000pF
+#
+DEF C_1000pF C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "C_1000pF" 25 -100 50 H V L CNN
+F2 "footprints:C_0805_OEM" -50 -350 50 H I C CNN
+F3 "" -300 250 50 H I C CNN
+F4 "CAP CER 1000pF 50V X7R 0805" 525 600 60 H I C CNN "Description"
+F5 "1276-6843-1-ND " 0 -450 60 H I C CNN "MPN"
+F6 "Digi-Key" 0 -550 60 H I C CNN "MFN"
+F7 "Value" 0 0 60 H I C CNN "Package"
+F8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B102KB6WPNC/1276-6843-1-ND/5961702" 425 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # C_100pF
 #
 DEF C_100pF C 0 10 N Y 1 F N
