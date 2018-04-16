@@ -1,36 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:rocketry
 LIBS:phoenix-cache
 EELAYER 25 0
@@ -815,7 +783,6 @@ NoConn ~ 18300 2850
 NoConn ~ 20200 3700
 NoConn ~ 20200 3600
 NoConn ~ 20200 3500
-NoConn ~ 20200 3200
 NoConn ~ 20200 3100
 NoConn ~ 20200 2650
 NoConn ~ 20200 1600
@@ -875,10 +842,10 @@ $EndComp
 Wire Wire Line
 	9900 1900 9900 2250
 $Comp
-L RFTRANS434MHZ U?
+L RFTRANS434MHZ U5
 U 1 1 5AD03B3C
 P 11800 3600
-F 0 "U?" H 11800 3200 60  0000 C CNN
+F 0 "U5" H 11800 3200 60  0000 C CNN
 F 1 "RFTRANS434MHZ" H 11800 3800 60  0000 C CNN
 F 2 "rocketry:RFTRANS434MHZ" H 11700 3100 60  0001 C CNN
 F 3 "" H 11800 3200 60  0001 C CNN
@@ -887,10 +854,10 @@ F 4 "https://www.sparkfun.com/products/10534" H 12150 3050 60  0001 C CNN "Purch
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADX377 U?
+L ADX377 U2
 U 1 1 5AD0D49E
 P 8750 4050
-F 0 "U?" H 8250 4800 60  0000 C CNN
+F 0 "U2" H 8250 4800 60  0000 C CNN
 F 1 "ADX377" H 8300 3200 60  0000 C CNN
 F 2 "rocketry:ADXL377" H 8750 4450 60  0001 C CNN
 F 3 "" H 8750 4450 60  0001 C CNN
@@ -920,4 +887,70 @@ Text Label 12100 3600 0    60   ~ 0
 GND
 Text Label 12100 3800 0    60   ~ 0
 3.3V
+$Comp
+L C_1000pF C9
+U 1 1 5AD2AF61
+P 9350 3850
+F 0 "C9" H 9375 3950 50  0000 L CNN
+F 1 "C_1000pF" H 9200 3850 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9300 3500 50  0001 C CNN
+F 3 "" H 9050 4100 50  0001 C CNN
+F 4 "CAP CER 1000pF 50V X7R 0805" H 9875 4450 60  0001 C CNN "Description"
+F 5 "1276-6843-1-ND " H 9350 3400 60  0001 C CNN "MPN"
+F 6 "Digi-Key" H 9350 3300 60  0001 C CNN "MFN"
+F 7 "Value" H 9350 3850 60  0001 C CNN "Package"
+F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B102KB6WPNC/1276-6843-1-ND/5961702" H 9775 4350 60  0001 C CNN "PurchasingLink"
+	1    9350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_1000pF C10
+U 1 1 5AD2B025
+P 9650 3750
+F 0 "C10" H 9675 3850 50  0000 L CNN
+F 1 "C_1000pF" H 9675 3650 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9600 3400 50  0001 C CNN
+F 3 "" H 9350 4000 50  0001 C CNN
+F 4 "CAP CER 1000pF 50V X7R 0805" H 10175 4350 60  0001 C CNN "Description"
+F 5 "1276-6843-1-ND " H 9650 3300 60  0001 C CNN "MPN"
+F 6 "Digi-Key" H 9650 3200 60  0001 C CNN "MFN"
+F 7 "Value" H 9650 3750 60  0001 C CNN "Package"
+F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B102KB6WPNC/1276-6843-1-ND/5961702" H 10075 4250 60  0001 C CNN "PurchasingLink"
+	1    9650 3750
+	1    0    0    -1  
+$EndComp
+Text Label 9050 5100 3    60   ~ 0
+GND
+Wire Wire Line
+	8950 3700 9350 3700
+Text Label 9350 4000 3    60   ~ 0
+GND
+Text Label 9650 3900 3    60   ~ 0
+GND
+Wire Wire Line
+	8950 3600 9650 3600
+$Comp
+L C_1000pF C8
+U 1 1 5AD2B10B
+P 9050 4950
+F 0 "C8" H 9075 5050 50  0000 L CNN
+F 1 "C_1000pF" H 9075 4850 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 9000 4600 50  0001 C CNN
+F 3 "" H 8750 5200 50  0001 C CNN
+F 4 "CAP CER 1000pF 50V X7R 0805" H 9575 5550 60  0001 C CNN "Description"
+F 5 "1276-6843-1-ND " H 9050 4500 60  0001 C CNN "MPN"
+F 6 "Digi-Key" H 9050 4400 60  0001 C CNN "MFN"
+F 7 "Value" H 9050 4950 60  0001 C CNN "Package"
+F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B102KB6WPNC/1276-6843-1-ND/5961702" H 9475 5450 60  0001 C CNN "PurchasingLink"
+	1    9050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4800 9050 4800
+Text Label 20200 3200 0    60   ~ 0
+TX
+Text Label 12100 3700 0    60   ~ 0
+TX
+NoConn ~ 8950 3400
+NoConn ~ 12100 3900
 $EndSCHEMATC

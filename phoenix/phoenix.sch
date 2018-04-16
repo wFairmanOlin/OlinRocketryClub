@@ -1,36 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:rocketry
 LIBS:phoenix-cache
 EELAYER 25 0
@@ -438,11 +406,11 @@ Text Label 15750 5050 1    60   ~ 0
 PLED2
 Text Label 16100 5050 1    60   ~ 0
 PLED3
-Text Label 20200 2350 0    60   ~ 0
+Text Label 20200 3500 0    60   ~ 0
 PLED1
-Text Label 20200 2450 0    60   ~ 0
+Text Label 20200 3600 0    60   ~ 0
 PLED2
-Text Label 20200 2550 0    60   ~ 0
+Text Label 20200 3700 0    60   ~ 0
 PLED3
 Text Notes 15100 4550 0    79   ~ 0
 Programming LEDs
@@ -628,13 +596,9 @@ Wire Wire Line
 Wire Wire Line
 	16950 6500 16950 6350
 Wire Wire Line
-	18150 1300 18150 1500
+	18150 1300 18150 1600
 Wire Wire Line
-	18150 1500 18150 1600
-Wire Wire Line
-	18000 1500 18150 1500
-Wire Wire Line
-	18150 1500 18300 1500
+	18000 1500 18300 1500
 Wire Wire Line
 	18150 1600 18300 1600
 Connection ~ 18150 1500
@@ -645,11 +609,7 @@ Wire Wire Line
 Wire Wire Line
 	18300 3600 18200 3600
 Wire Wire Line
-	18200 3600 18200 3700
-Wire Wire Line
-	18200 3700 18200 3800
-Wire Wire Line
-	18200 3800 18200 3950
+	18200 3600 18200 3950
 Wire Wire Line
 	18300 3700 18200 3700
 Connection ~ 18200 3700
@@ -657,9 +617,7 @@ Wire Wire Line
 	18300 3800 18200 3800
 Connection ~ 18200 3800
 Wire Wire Line
-	20200 2950 20500 2950
-Wire Wire Line
-	20500 2950 20650 2950
+	20200 2950 20650 2950
 Wire Wire Line
 	20500 2900 20500 2950
 Connection ~ 20500 2950
@@ -704,18 +662,12 @@ Wire Wire Line
 Wire Wire Line
 	10200 5900 10550 5900
 Wire Wire Line
-	12200 2300 12200 2350
-Wire Wire Line
-	12200 2350 12200 2400
+	12200 2300 12200 2400
 Connection ~ 12200 2350
 Wire Wire Line
 	12200 2350 12650 2350
 Wire Wire Line
-	14850 2150 14850 2250
-Wire Wire Line
-	14850 2250 14850 2350
-Wire Wire Line
-	14850 2350 14850 2450
+	14850 2150 14850 2450
 Connection ~ 14850 2250
 Connection ~ 14850 2350
 Wire Wire Line
@@ -727,9 +679,7 @@ GND
 Text Label 20550 3800 0    60   ~ 0
 SEPERATE
 Wire Wire Line
-	20200 3800 20350 3800
-Wire Wire Line
-	20350 3800 20550 3800
+	20200 3800 20550 3800
 $Comp
 L R_10k R8
 U 1 1 5AC43E0B
@@ -808,14 +758,10 @@ F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	21750 2000 21900 2000
-Wire Wire Line
-	21900 2000 22050 2000
+	21750 2000 22050 2000
 Connection ~ 21400 2000
 Wire Wire Line
-	21300 2000 21400 2000
-Wire Wire Line
-	21400 2000 21550 2000
+	21300 2000 21550 2000
 Text Label 21300 2000 2    60   ~ 0
 PB6
 Connection ~ 21900 2000
@@ -826,21 +772,14 @@ Wire Wire Line
 Wire Wire Line
 	21650 1750 21950 1750
 Wire Wire Line
-	21650 2150 21650 2300
+	21650 2150 21650 2400
 Wire Wire Line
-	21650 2300 21650 2400
-Wire Wire Line
-	21400 2300 21650 2300
-Wire Wire Line
-	21650 2300 21900 2300
+	21400 2300 21900 2300
 Connection ~ 21650 2300
 Wire Wire Line
 	9900 1900 9800 1900
 NoConn ~ 18300 2950
 NoConn ~ 18300 2850
-NoConn ~ 20200 3700
-NoConn ~ 20200 3600
-NoConn ~ 20200 3500
 NoConn ~ 20200 3100
 NoConn ~ 20200 2650
 NoConn ~ 20200 1600
@@ -864,9 +803,7 @@ Text Label 16550 6350 2    60   ~ 0
 Text Label 10150 5200 2    60   ~ 0
 3.3V
 Wire Wire Line
-	10200 5200 10200 5450
-Wire Wire Line
-	10200 5450 10200 5600
+	10200 5200 10200 5600
 Wire Wire Line
 	10200 5200 10150 5200
 Wire Wire Line
@@ -902,10 +839,10 @@ $EndComp
 Wire Wire Line
 	9900 1900 9900 2250
 $Comp
-L RFTRANS434MHZ U?
+L RFTRANS434MHZ U5
 U 1 1 5AD03B3C
 P 11800 3600
-F 0 "U?" H 11800 3200 60  0000 C CNN
+F 0 "U5" H 11800 3200 60  0000 C CNN
 F 1 "RFTRANS434MHZ" H 11800 3800 60  0000 C CNN
 F 2 "rocketry:RFTRANS434MHZ" H 11700 3100 60  0001 C CNN
 F 3 "" H 11800 3200 60  0001 C CNN
@@ -914,10 +851,10 @@ F 4 "https://www.sparkfun.com/products/10534" H 12150 3050 60  0001 C CNN "Purch
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADX377 U?
+L ADX377 U2
 U 1 1 5AD0D49E
 P 8750 4050
-F 0 "U?" H 8250 4800 60  0000 C CNN
+F 0 "U2" H 8250 4800 60  0000 C CNN
 F 1 "ADX377" H 8300 3200 60  0000 C CNN
 F 2 "rocketry:ADXL377" H 8750 4450 60  0001 C CNN
 F 3 "" H 8750 4450 60  0001 C CNN
@@ -948,10 +885,10 @@ GND
 Text Label 12100 3800 0    60   ~ 0
 3.3V
 $Comp
-L C_1000pF C?
+L C_1000pF C9
 U 1 1 5AD2AF61
 P 9350 3850
-F 0 "C?" H 9375 3950 50  0000 L CNN
+F 0 "C9" H 9375 3950 50  0000 L CNN
 F 1 "C_1000pF" H 9200 3850 50  0000 L CNN
 F 2 "footprints:C_0805_OEM" H 9300 3500 50  0001 C CNN
 F 3 "" H 9050 4100 50  0001 C CNN
@@ -964,10 +901,10 @@ F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B10
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_1000pF C?
+L C_1000pF C10
 U 1 1 5AD2B025
 P 9650 3750
-F 0 "C?" H 9675 3850 50  0000 L CNN
+F 0 "C10" H 9675 3850 50  0000 L CNN
 F 1 "C_1000pF" H 9675 3650 50  0000 L CNN
 F 2 "footprints:C_0805_OEM" H 9600 3400 50  0001 C CNN
 F 3 "" H 9350 4000 50  0001 C CNN
@@ -979,7 +916,7 @@ F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B10
 	1    9650 3750
 	1    0    0    -1  
 $EndComp
-Text Label 9100 5100 3    60   ~ 0
+Text Label 9050 5100 3    60   ~ 0
 GND
 Wire Wire Line
 	8950 3700 9350 3700
@@ -990,10 +927,10 @@ GND
 Wire Wire Line
 	8950 3600 9650 3600
 $Comp
-L C_1000pF C?
+L C_1000pF C8
 U 1 1 5AD2B10B
 P 9050 4950
-F 0 "C?" H 9075 5050 50  0000 L CNN
+F 0 "C8" H 9075 5050 50  0000 L CNN
 F 1 "C_1000pF" H 9075 4850 50  0000 L CNN
 F 2 "footprints:C_0805_OEM" H 9000 4600 50  0001 C CNN
 F 3 "" H 8750 5200 50  0001 C CNN
@@ -1011,4 +948,18 @@ Text Label 20200 3200 0    60   ~ 0
 TX
 Text Label 12100 3700 0    60   ~ 0
 TX
+NoConn ~ 8950 3400
+NoConn ~ 12100 3900
+Text Label 9650 3600 0    60   ~ 0
+YOUT
+Text Label 9350 3700 0    60   ~ 0
+XOUT
+Text Label 9050 4800 0    60   ~ 0
+ZOUT
+Text Label 20200 2450 0    60   ~ 0
+XOUT
+Text Label 20200 2350 0    60   ~ 0
+YOUT
+Text Label 20200 2550 0    60   ~ 0
+ZOUT
 $EndSCHEMATC

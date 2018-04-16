@@ -1,4 +1,4 @@
-update=Tue 27 Mar 2018 08:55:14 AM EDT
+update=Sat 14 Apr 2018 08:44:27 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=schematic/rocketry
+LibName34=phoenix-cache
