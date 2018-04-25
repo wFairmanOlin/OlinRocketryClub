@@ -5,7 +5,7 @@
 #include <SD.h>
 #include <Wire.h>
 
-File telemetry;
+File telemetry0000;
 Adafruit_MMA8451 imu = Adafruit_MMA8451();
 
 void setup() {
