@@ -5,8 +5,8 @@
 ##########------------------------------------------------------##########
 
 MCU   = atmega328p
-F_CPU = 8000000UL
-BAUD  = 9600UL
+F_CPU = '4000000UL'
+BAUD  = '9600UL'
 ## Also try BAUD = 19200 or 38400 if you're feeling lucky.
 
 ## A directory for common include files and the simple USART library.
