@@ -6,16 +6,16 @@ int main (void) {
     // Use pin 10 to light up an LED
 
 
-    DDRD |= _BV(PD4) | _BV(PD5);
+    DDRB |= _BV(PB1) | _BV(PB0);
     int timer = 0;
     while(1) {
         timer++;
         // Toggle PE1 (pin 10)
         // Toggles power to pin 10 to create a "blink"
         if(timer%4==0){
-            PORTD ^= _BV(PD5);
+            PORTB ^= _BV(PB1);
         }
-        PORTD ^= _BV(PD4);
+        PORTB ^= _BV(PB0);
 
 
         // Give a delay to the toggle so it doesn't infinitely toggle
