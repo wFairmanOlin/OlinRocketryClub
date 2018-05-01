@@ -2,6 +2,7 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
+#define F_CPU           4000000UL
 #define PORT_LED        PORTD
 #define REG_LED         DDRD
 #define LED1            PD4
@@ -14,25 +15,39 @@
 #define XOUT            PC1
 #define ZOUT            PC2
 
+#define FLAG_EMATCH     0
+
 uint8_t gFlag = 0x00;
 
 uint8_t gY = 0x00;
 uint8_t gX = 0x00;
 uint8_t gZ = 0x00;
 
-uint8_t gCounter = 0x00;
+unsigned long gCounter = 0x00;
+
+/* TODO FOR WEDNESDAY */
+//Get timer working
+//Write to sd-card
+//Get transistor working
+//Calibrate accelerometer data
+//Create function for appogee using accel data
 
 ISR(TIMER0_COMPA_vect){
+    //TODO fix
+    //Currently ticks at 4hz
     gCounter++;
-    if (gCounter > 1){
-        gFlag |= _BV(2);
+    if (gCounter > 60){
+        gFlag |= _BV(FLAG_EMATCH);
     }
-    if(gCounter > 8000000){
-        gFlag |= _BV(1);
+    if(gCounter > 80){
+        gFlag |= _BV(3);
     }
+
 }
 
 void initTimer(void) {
+    //TODO
+    //FOR 16M1, configure for 328P
     TCCR0A = _BV(WGM01);    // Set up 8-bit timer in CTC mode
     TCCR0B = 0x05;          // clkio/1024 prescaler
     TIMSK0 |= _BV(OCIE0A);
@@ -100,9 +115,8 @@ void triggerEMatch(void){
 }
 
 int main (void) {
-    // Set PB4 to output
-    // Use pin 10 to light up an LED
 
+    sei();
     initADC();
     initTimer();
 
@@ -110,24 +124,19 @@ int main (void) {
     REG_LED |= _BV(LED1) | _BV(LED2) | _BV(LED3);
     DDRD |= _BV(PD7);
     PORT_LED |= _BV(LED3);
-    uint8_t count = 0x00;
-
+    // uint8_t count = 0;
     while(1) {
+        // count++;
         // readAC();
-        count++;
-
-        if(bit_is_set(gFlag,2)){
-            PORT_LED |= _BV(LED2);
-        }
 
 
-        if(bit_is_set(gFlag,1)){
+        if(bit_is_set(gFlag,FLAG_EMATCH)){
             PORT_LED |= _BV(LED1);
+            PORTD |= _BV(PD7);
         }
-        _delay_ms(1000);
-        // PORT_LED |= _BV(LED1);
-        PORTD |= _BV(PD7);
-        if(count>0){
+
+        if(bit_is_set(gFlag,3)){
+            PORT_LED |= _BV(LED2);
         }
 
 

@@ -22,7 +22,7 @@ LIBDIR = ./AVRuProgramming-Library
 
 PROGRAMMER_TYPE = usbtiny #avrispmkII
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = -F -vvvv
+PROGRAMMER_ARGS = -F -vv
 
 ##########------------------------------------------------------##########
 ##########                  Program Locations                   ##########
