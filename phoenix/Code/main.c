@@ -2,6 +2,7 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
+
 #define F_CPU           4000000UL
 #define PORT_LED        PORTD
 #define REG_LED         DDRD
@@ -31,6 +32,7 @@ unsigned long gCounter = 0x00;
 //Get transistor working
 //Calibrate accelerometer data
 //Create function for appogee using accel data
+//https://electronics.stackexchange.com/questions/66145/avr-how-to-program-an-avr-chip-in-linux
 
 ISR(TIMER0_COMPA_vect){
     //TODO fix
@@ -70,7 +72,7 @@ void initADC(void) {
     ADMUX |= _BV(0x00);
 }
 
-void readAC(void){
+void readAC(int test){
     ADMUX = _BV(REFS0);
     ADMUX |= 0;
     ADCSRA |= _BV(ADSC);
@@ -91,22 +93,24 @@ void readAC(void){
     loop_until_bit_is_clear(ADCSRA, ADSC);
     gZ = (uint8_t) (ADC >> 2);
 
-    if(gX > 128){
-        PORT_LED |= _BV(LED1);
-    } else {
-        PORT_LED &= ~_BV(LED1);
-    }
+    if(test==1){
+        if(gX > 128){
+            PORT_LED |= _BV(LED1);
+        } else {
+            PORT_LED &= ~_BV(LED1);
+        }
 
-    if(gY > 128){
-        PORT_LED |= _BV(LED2);
-    } else {
-        PORT_LED &= ~_BV(LED2);
-    }
+        if(gY > 128){
+            PORT_LED |= _BV(LED2);
+        } else {
+            PORT_LED &= ~_BV(LED2);
+        }
 
-    if(gZ > 128){
-        PORT_LED |= _BV(LED3);
-    } else {
-        PORT_LED &= ~_BV(LED3);
+        if(gZ > 128){
+            PORT_LED |= _BV(LED3);
+        } else {
+            PORT_LED &= ~_BV(LED3);
+        }
     }
 }
 
@@ -123,21 +127,13 @@ int main (void) {
 
     REG_LED |= _BV(LED1) | _BV(LED2) | _BV(LED3);
     DDRD |= _BV(PD7);
+    PORT_LED |= _BV(LED1);
     PORT_LED |= _BV(LED3);
     // uint8_t count = 0;
     while(1) {
         // count++;
-        // readAC();
+        readAC(0);
 
-
-        if(bit_is_set(gFlag,FLAG_EMATCH)){
-            PORT_LED |= _BV(LED1);
-            PORTD |= _BV(PD7);
-        }
-
-        if(bit_is_set(gFlag,3)){
-            PORT_LED |= _BV(LED2);
-        }
 
 
 
