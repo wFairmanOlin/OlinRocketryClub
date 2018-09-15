@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name phoenix-rescue)(type Legacy)(uri ${KIPRJMOD}/phoenix-rescue.lib)(options "")(descr ""))
+  (lib (name rocketry)(type Legacy)(uri ${KIPRJMOD}/schematic/rocketry.lib)(options "")(descr ""))
+  (lib (name formula)(type Legacy)(uri /home/william/Desktop/OEM_Preferred_Parts/schematic/formula.lib)(options "")(descr ""))
+)

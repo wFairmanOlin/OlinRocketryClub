@@ -1,7 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:rocketry
+EESchema Schematic File Version 4
 LIBS:phoenix-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -16,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Cell BT1
+L phoenix-rescue:Battery_Cell BT1
 U 1 1 5ABA39D7
 P 17700 6450
 F 0 "BT1" V 17850 6450 50  0000 L CNN
@@ -27,7 +26,7 @@ F 3 "" V 17700 6510 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Micro_SD_Card_Det J2
+L phoenix-rescue:Micro_SD_Card_Det J2
 U 1 1 5ABA3E17
 P 19850 5750
 F 0 "J2" H 19200 6450 50  0000 C CNN
@@ -38,7 +37,7 @@ F 3 "" H 19850 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATMEGA328P-AU U1
+L phoenix-rescue:ATMEGA328P-AU U1
 U 1 1 5A8B2ED4
 P 19200 2600
 F 0 "U1" H 18450 3850 50  0000 L BNN
@@ -69,7 +68,7 @@ SCK
 Text Label 18950 5750 2    60   ~ 0
 SCK
 $Comp
-L +3.3V #PWR01
+L power:+3.3V #PWR01
 U 1 1 5ABBE98B
 P 16550 6500
 F 0 "#PWR01" H 16550 6350 50  0001 C CNN
@@ -82,7 +81,7 @@ $EndComp
 Text Label 16950 6350 0    60   ~ 0
 GND
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5ABBEBF9
 P 16950 6500
 F 0 "#PWR02" H 16950 6250 50  0001 C CNN
@@ -93,7 +92,7 @@ F 3 "" H 16950 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 5ABBECDC
 P 15700 6450
 F 0 "#FLG03" H 15700 6525 50  0001 C CNN
@@ -104,7 +103,7 @@ F 3 "" H 15700 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 5ABBED0C
 P 16100 6450
 F 0 "#FLG04" H 16100 6525 50  0001 C CNN
@@ -115,7 +114,7 @@ F 3 "" H 16100 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG05
+L power:PWR_FLAG #FLG05
 U 1 1 5ABBED35
 P 15300 6450
 F 0 "#FLG05" H 15300 6525 50  0001 C CNN
@@ -126,7 +125,7 @@ F 3 "" H 15300 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR06
+L power:+3.3V #PWR06
 U 1 1 5ABBED86
 P 15700 6450
 F 0 "#PWR06" H 15700 6300 50  0001 C CNN
@@ -137,7 +136,7 @@ F 3 "" H 15700 6450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5ABBEDAF
 P 16100 6450
 F 0 "#PWR07" H 16100 6200 50  0001 C CNN
@@ -148,7 +147,7 @@ F 3 "" H 16100 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_100 R7
+L rocketry:R_100 R7
 U 1 1 5ABBF03F
 P 18000 1650
 F 0 "R7" V 18080 1650 50  0000 C CNN
@@ -163,7 +162,7 @@ F 7 "https://www.digikey.com/products/en?keywords=RNCP0805FTD100RCT-ND" H 18480 
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_100pF C5
+L rocketry:C_100pF C5
 U 1 1 5ABBF093
 P 18000 2000
 F 0 "C5" H 17850 2100 50  0000 L CNN
@@ -179,7 +178,7 @@ F 7 "https://www.digikey.com/product-detail/en/kemet/C0805C101J5GACTU/399-1122-1
 $EndComp
 NoConn ~ 18300 2100
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5ABBF3B0
 P 18000 2150
 F 0 "#PWR08" H 18000 1900 50  0001 C CNN
@@ -190,7 +189,7 @@ F 3 "" H 18000 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR09
+L power:+BATT #PWR09
 U 1 1 5ABBF3D1
 P 15300 6450
 F 0 "#PWR09" H 15300 6300 50  0001 C CNN
@@ -201,7 +200,7 @@ F 3 "" H 15300 6450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 5ABBF579
 P 18200 3950
 F 0 "#PWR010" H 18200 3700 50  0001 C CNN
@@ -212,7 +211,7 @@ F 3 "" H 18200 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X03 P1
+L rocketry:CONN_02X03 P1
 U 1 1 5ABBF86C
 P 17150 5600
 F 0 "P1" H 17150 5800 50  0000 C CNN
@@ -235,7 +234,7 @@ RESET
 Text Label 20650 2950 0    60   ~ 0
 RESET
 $Comp
-L R_10k R9
+L rocketry:R_10k R9
 U 1 1 5ABBFB31
 P 20500 2750
 F 0 "R9" V 20580 2750 50  0000 C CNN
@@ -252,7 +251,7 @@ $EndComp
 Text Label 17400 5600 0    60   ~ 0
 MOSI
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5ABBFD0B
 P 17450 5750
 F 0 "#PWR011" H 17450 5500 50  0001 C CNN
@@ -267,7 +266,7 @@ NoConn ~ 18950 6150
 NoConn ~ 18950 6250
 NoConn ~ 18950 6050
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5ABBFDCC
 P 18600 5950
 F 0 "#PWR012" H 18600 5700 50  0001 C CNN
@@ -278,7 +277,7 @@ F 3 "" H 18600 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_0805 D2
+L rocketry:LED_0805 D2
 U 1 1 5ABC351F
 P 15750 5200
 F 0 "D2" H 15750 5100 50  0000 C CNN
@@ -293,7 +292,7 @@ F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 16150 5700 60
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_200 R5
+L rocketry:R_200 R5
 U 1 1 5ABC3594
 P 15750 5650
 F 0 "R5" V 15830 5650 50  0000 C CNN
@@ -308,7 +307,7 @@ F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 16230 6
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 5ABC363D
 P 15750 5800
 F 0 "#PWR013" H 15750 5550 50  0001 C CNN
@@ -319,7 +318,7 @@ F 3 "" H 15750 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_0805 D3
+L rocketry:LED_0805 D3
 U 1 1 5ABC379F
 P 16100 5200
 F 0 "D3" H 16100 5100 50  0000 C CNN
@@ -334,7 +333,7 @@ F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 16500 5700 60
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_200 R6
+L rocketry:R_200 R6
 U 1 1 5ABC37A9
 P 16100 5650
 F 0 "R6" V 16180 5650 50  0000 C CNN
@@ -349,7 +348,7 @@ F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 16580 6
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 5ABC37AF
 P 16100 5800
 F 0 "#PWR014" H 16100 5550 50  0001 C CNN
@@ -360,7 +359,7 @@ F 3 "" H 16100 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED_0805 D1
+L rocketry:LED_0805 D1
 U 1 1 5ABC380C
 P 15400 5200
 F 0 "D1" H 15400 5100 50  0000 C CNN
@@ -375,7 +374,7 @@ F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 15800 5700 60
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_200 R4
+L rocketry:R_200 R4
 U 1 1 5ABC3816
 P 15400 5650
 F 0 "R4" V 15480 5650 50  0000 C CNN
@@ -390,7 +389,7 @@ F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 15880 6
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 5ABC381C
 P 15400 5800
 F 0 "#PWR015" H 15400 5550 50  0001 C CNN
@@ -417,7 +416,7 @@ Programming LEDs
 Text Notes 18400 4850 0    79   ~ 0
 Micro SD-Card Reader
 $Comp
-L Ultrafit_2 J1
+L rocketry:Ultrafit_2 J1
 U 1 1 5ABC44C9
 P 9550 1850
 F 0 "J1" H 9550 2000 60  0000 C CNN
@@ -432,7 +431,7 @@ F 7 "Value" H 9950 2400 60  0001 C CNN "Package"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MMA8451QT U3
+L rocketry:MMA8451QT U3
 U 1 1 5AC3B52F
 P 10550 5300
 F 0 "U3" H 11750 4650 60  0000 C CNN
@@ -449,7 +448,7 @@ NoConn ~ 10550 5500
 NoConn ~ 12950 5600
 NoConn ~ 10550 6000
 $Comp
-L C_0.1uF C1
+L rocketry:C_0.1uF C1
 U 1 1 5AC40F79
 P 9800 5700
 F 0 "C1" H 9825 5800 50  0000 L CNN
@@ -466,7 +465,7 @@ $EndComp
 Text Label 9800 5850 3    60   ~ 0
 GND
 $Comp
-L R_10k R1
+L rocketry:R_10k R1
 U 1 1 5AC414DA
 P 10200 5750
 F 0 "R1" V 10280 5750 50  0000 C CNN
@@ -481,7 +480,7 @@ F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 106
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_0.1uF C2
+L rocketry:C_0.1uF C2
 U 1 1 5AC416EE
 P 9300 5700
 F 0 "C2" H 9325 5800 50  0000 L CNN
@@ -520,7 +519,7 @@ SDA
 Text Label 20200 2850 0    60   ~ 0
 SCL
 $Comp
-L L6932D1.2 U4
+L rocketry:L6932D1.2 U4
 U 1 1 5AC43804
 P 12650 2150
 F 0 "U4" H 13750 2550 60  0000 C CNN
@@ -532,7 +531,7 @@ F 4 "https://www.digikey.com/product-detail/en/stmicroelectronics/L6932D1.2TR/49
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_10uF C4
+L rocketry:C_10uF C4
 U 1 1 5AC43E21
 P 11800 2250
 F 0 "C4" H 11825 2350 50  0000 L CNN
@@ -549,7 +548,7 @@ $EndComp
 Text Label 11800 2100 1    60   ~ 0
 VIN
 $Comp
-L 5K R3
+L rocketry:5K R3
 U 1 1 5AC3FF90
 P 12200 2550
 F 0 "R3" V 12280 2550 50  0000 C CNN
@@ -560,7 +559,7 @@ F 3 "" H 12200 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 5K R2
+L rocketry:5K R2
 U 1 1 5AC404C1
 P 12200 2150
 F 0 "R2" V 12280 2150 50  0000 C CNN
@@ -577,7 +576,7 @@ VIN
 Text Label 12650 2150 2    60   ~ 0
 VIN
 $Comp
-L C_10uF C3
+L rocketry:C_10uF C3
 U 1 1 5AC40A51
 P 11400 2250
 F 0 "C3" H 11425 2350 50  0000 L CNN
@@ -596,9 +595,9 @@ Wire Wire Line
 Wire Wire Line
 	16950 6500 16950 6350
 Wire Wire Line
-	18150 1300 18150 1600
+	18150 1300 18150 1500
 Wire Wire Line
-	18000 1500 18300 1500
+	18000 1500 18150 1500
 Wire Wire Line
 	18150 1600 18300 1600
 Connection ~ 18150 1500
@@ -609,7 +608,7 @@ Wire Wire Line
 Wire Wire Line
 	18300 3600 18200 3600
 Wire Wire Line
-	18200 3600 18200 3950
+	18200 3600 18200 3700
 Wire Wire Line
 	18300 3700 18200 3700
 Connection ~ 18200 3700
@@ -617,7 +616,7 @@ Wire Wire Line
 	18300 3800 18200 3800
 Connection ~ 18200 3800
 Wire Wire Line
-	20200 2950 20650 2950
+	20200 2950 20500 2950
 Wire Wire Line
 	20500 2900 20500 2950
 Connection ~ 20500 2950
@@ -662,12 +661,12 @@ Wire Wire Line
 Wire Wire Line
 	10200 5900 10550 5900
 Wire Wire Line
-	12200 2300 12200 2400
+	12200 2300 12200 2350
 Connection ~ 12200 2350
 Wire Wire Line
 	12200 2350 12650 2350
 Wire Wire Line
-	14850 2150 14850 2450
+	14850 2150 14850 2250
 Connection ~ 14850 2250
 Connection ~ 14850 2350
 Wire Wire Line
@@ -679,9 +678,9 @@ GND
 Text Label 20550 3800 0    60   ~ 0
 SEPERATE
 Wire Wire Line
-	20200 3800 20550 3800
+	20200 3800 20350 3800
 $Comp
-L R_10k R8
+L rocketry:R_10k R8
 U 1 1 5AC43E0B
 P 20350 3950
 F 0 "R8" V 20430 3950 50  0000 C CNN
@@ -709,7 +708,7 @@ Linear Regulator\n
 Text Notes 8350 2200 0    60   ~ 0
 N-Channel Transistor\n
 $Comp
-L Crystal_SMD Y1
+L rocketry:Crystal_SMD Y1
 U 1 1 5ACEF03D
 P 21650 2000
 F 0 "Y1" H 21700 2175 50  0000 L CNN
@@ -728,7 +727,7 @@ GND
 Text Label 21650 2400 0    60   ~ 0
 GND
 $Comp
-L C_30pF C6
+L rocketry:C_30pF C6
 U 1 1 5ACF00B7
 P 21400 2150
 F 0 "C6" H 21425 2250 50  0000 L CNN
@@ -743,7 +742,7 @@ F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_30pF C7
+L rocketry:C_30pF C7
 U 1 1 5ACF0160
 P 21900 2150
 F 0 "C7" H 21925 2250 50  0000 L CNN
@@ -758,10 +757,10 @@ F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	21750 2000 22050 2000
+	21750 2000 21900 2000
 Connection ~ 21400 2000
 Wire Wire Line
-	21300 2000 21550 2000
+	21300 2000 21400 2000
 Text Label 21300 2000 2    60   ~ 0
 PB6
 Connection ~ 21900 2000
@@ -772,9 +771,9 @@ Wire Wire Line
 Wire Wire Line
 	21650 1750 21950 1750
 Wire Wire Line
-	21650 2150 21650 2400
+	21650 2150 21650 2300
 Wire Wire Line
-	21400 2300 21900 2300
+	21400 2300 21650 2300
 Connection ~ 21650 2300
 Wire Wire Line
 	9900 1900 9800 1900
@@ -803,7 +802,7 @@ Text Label 16550 6350 2    60   ~ 0
 Text Label 10150 5200 2    60   ~ 0
 3.3V
 Wire Wire Line
-	10200 5200 10200 5600
+	10200 5200 10200 5450
 Wire Wire Line
 	10200 5200 10150 5200
 Wire Wire Line
@@ -825,7 +824,7 @@ Text Label 20500 2600 0    60   ~ 0
 3.3V
 NoConn ~ 20650 6250
 $Comp
-L IRLML6344 Q1
+L rocketry:IRLML6344 Q1
 U 1 1 5ACFF80D
 P 9800 2450
 F 0 "Q1" H 10000 2525 50  0000 L CNN
@@ -839,7 +838,7 @@ $EndComp
 Wire Wire Line
 	9900 1900 9900 2250
 $Comp
-L RFTRANS434MHZ U5
+L rocketry:RFTRANS434MHZ U5
 U 1 1 5AD03B3C
 P 11800 3600
 F 0 "U5" H 11800 3200 60  0000 C CNN
@@ -851,7 +850,7 @@ F 4 "https://www.sparkfun.com/products/10534" H 12150 3050 60  0001 C CNN "Purch
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADX377 U2
+L rocketry:ADX377 U2
 U 1 1 5AD0D49E
 P 8750 4050
 F 0 "U2" H 8250 4800 60  0000 C CNN
@@ -885,7 +884,7 @@ GND
 Text Label 12100 3800 0    60   ~ 0
 3.3V
 $Comp
-L C_1000pF C9
+L rocketry:C_1000pF C9
 U 1 1 5AD2AF61
 P 9350 3850
 F 0 "C9" H 9375 3950 50  0000 L CNN
@@ -901,7 +900,7 @@ F 8 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL21B10
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_1000pF C10
+L rocketry:C_1000pF C10
 U 1 1 5AD2B025
 P 9650 3750
 F 0 "C10" H 9675 3850 50  0000 L CNN
@@ -927,7 +926,7 @@ GND
 Wire Wire Line
 	8950 3600 9650 3600
 $Comp
-L C_1000pF C8
+L rocketry:C_1000pF C8
 U 1 1 5AD2B10B
 P 9050 4950
 F 0 "C8" H 9075 5050 50  0000 L CNN
@@ -962,4 +961,32 @@ Text Label 20200 2350 0    60   ~ 0
 YOUT
 Text Label 20200 2550 0    60   ~ 0
 ZOUT
+Wire Wire Line
+	18150 1500 18150 1600
+Wire Wire Line
+	18150 1500 18300 1500
+Wire Wire Line
+	18200 3700 18200 3800
+Wire Wire Line
+	18200 3800 18200 3950
+Wire Wire Line
+	20500 2950 20650 2950
+Wire Wire Line
+	12200 2350 12200 2400
+Wire Wire Line
+	14850 2250 14850 2350
+Wire Wire Line
+	14850 2350 14850 2450
+Wire Wire Line
+	20350 3800 20550 3800
+Wire Wire Line
+	21400 2000 21550 2000
+Wire Wire Line
+	21900 2000 22050 2000
+Wire Wire Line
+	21650 2300 21650 2400
+Wire Wire Line
+	21650 2300 21900 2300
+Wire Wire Line
+	10200 5450 10200 5600
 $EndSCHEMATC
