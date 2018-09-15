@@ -12,7 +12,7 @@ BAUD  = 9600UL
 ## A directory for common include files and the simple USART library.
 ## If you move either the current folder or the Library folder, you'll
 ##  need to change this path to match.
-LIBDIR = ./AVRuProgramming-Library
+LIBDIR = ./AVR-Programming-Library
 # LIBDIR = ./lib/
 
 ##########------------------------------------------------------##########
@@ -20,9 +20,9 @@ LIBDIR = ./AVRuProgramming-Library
 ##########          Set up once, then forget about it           ##########
 ##########
 
-PROGRAMMER_TYPE = usbtiny #avrispmkII
+PROGRAMMER_TYPE = avrispmkII
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
-PROGRAMMER_ARGS = -F -vv
+PROGRAMMER_ARGS =
 
 ##########------------------------------------------------------##########
 ##########                  Program Locations                   ##########
