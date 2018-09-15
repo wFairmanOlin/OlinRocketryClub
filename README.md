@@ -16,7 +16,9 @@ This board is intended to record flight data and transmit telemetry while mainta
 
 
 ## How to Clone this Repo (Ubuntu)
-1. Click the git clone button in the upper right-hand corner of this page and copy the url provided.
-2. use Ctrl+Alt+t to open the terminal.
-3. use the 'cd' command to change to the appropriate directory.
-4. type in the command "
+1. Use the Ctrl+Alt+t command to open your terminal. 
+2. Use the `cd` command to switch to the directory you want to save this repo in.
+3. Copy the code below
+```
+git clone https://github.com/wFairmanOlin/OlinRocketryClub.git
+```
