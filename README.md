@@ -15,3 +15,8 @@ This board is intended to record flight data and transmit telemetry while mainta
 4. Battery
 
 
+## How to Clone this Repo (Ubuntu)
+1. Click the git clone button in the upper right-hand corner of this page and copy the url provided.
+2. use Ctrl+Alt+t to open the terminal.
+3. use the 'cd' command to change to the appropriate directory.
+4. type in the command "
