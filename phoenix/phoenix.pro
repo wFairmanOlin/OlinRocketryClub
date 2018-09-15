@@ -1,4 +1,4 @@
-update=Sat 14 Apr 2018 08:44:27 PM EDT
+update=Tue 07 Aug 2018 05:06:26 PM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=contrib
 LibName32=valves
 LibName33=schematic/rocketry
 LibName34=phoenix-cache
+LibName35=/home/william/Desktop/OEM_Preferred_Parts/schematic/formula

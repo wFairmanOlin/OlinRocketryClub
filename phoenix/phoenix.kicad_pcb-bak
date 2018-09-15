@@ -15,13 +15,13 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -258,6 +258,11 @@
       (net 11 /VIN))
     (pad 2 thru_hole circle (at 55.7 0) (size 1.67 1.67) (drill 1.17) (layers *.Cu *.Mask)
       (net 9 GND))
+    (model "/home/corey/Desktop/OlinRocketryClub/3d files/batter_holder/battery_holder.wrl"
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module footprints:Ultrafit_2 (layer F.Cu) (tedit 5AD4CBBB) (tstamp 5AD4C221)
