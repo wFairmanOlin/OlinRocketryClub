@@ -1,0 +1,26 @@
+-> Resistors to 0805
+-> Caps to 0805
+-> Crystal to 16MHrocketry todo z
+-> 
+
+	miso 3v3
+	sck mosi
+	reset gnd
+
+-> avr input caps
+-> reset pulldown
+-> microSD
+-> SMD connector for antenna -> TBD
+-> R+B programming LEDs
+
+
+RFTRANS:
+->
+	GND
+	DATA
+	VCC
+	ANT
+
+-> TODO: is 5v from programmer gonna fry board
+
+-> Create 2.2uF & 10nF caps in rocket lib => digikey link

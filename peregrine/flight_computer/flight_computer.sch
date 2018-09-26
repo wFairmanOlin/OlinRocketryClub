@@ -1,0 +1,1289 @@
+EESchema Schematic File Version 4
+LIBS:flight_computer-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U1
+U 1 1 5BA55CEC
+P 1850 2900
+F 0 "U1" H 1500 2950 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 1750 2850 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 1850 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 1850 2900 50  0001 C CNN
+	1    1850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2300 2650 2300
+Text Label 2650 2300 0    50   ~ 0
+XTAL1
+Text Label 2600 4900 1    50   ~ 0
+XTAL1
+$Comp
+L power:GND #PWR0101
+U 1 1 5BA59E79
+P 2700 5800
+F 0 "#PWR0101" H 2700 5550 50  0001 C CNN
+F 1 "GND" H 2705 5627 50  0000 C CNN
+F 2 "" H 2700 5800 50  0001 C CNN
+F 3 "" H 2700 5800 50  0001 C CNN
+	1    2700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BA5A07D
+P 1850 4550
+F 0 "#PWR0102" H 1850 4300 50  0001 C CNN
+F 1 "GND" H 1855 4377 50  0000 C CNN
+F 2 "" H 1850 4550 50  0001 C CNN
+F 3 "" H 1850 4550 50  0001 C CNN
+	1    1850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4400 1850 4550
+$Comp
+L Regulator_Linear:MIC5504-3.3YM5 U2
+U 1 1 5BA5B7E4
+P 4750 6700
+F 0 "U2" H 4750 7067 50  0000 C CNN
+F 1 "MIC5504-3.3YM5" H 4750 6976 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4750 6300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 4500 6950 50  0001 C CNN
+	1    4750 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5BA5B8B4
+P 4750 7150
+F 0 "#PWR0104" H 4750 6900 50  0001 C CNN
+F 1 "GND" H 4755 6977 50  0000 C CNN
+F 2 "" H 4750 7150 50  0001 C CNN
+F 3 "" H 4750 7150 50  0001 C CNN
+	1    4750 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5BA5B8E6
+P 5350 6600
+F 0 "#PWR0105" H 5350 6450 50  0001 C CNN
+F 1 "+3V3" H 5365 6773 50  0000 C CNN
+F 2 "" H 5350 6600 50  0001 C CNN
+F 3 "" H 5350 6600 50  0001 C CNN
+	1    5350 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 7000 4750 7150
+Wire Wire Line
+	4350 6600 4200 6600
+$Comp
+L main:VBAT #PWR0106
+U 1 1 5BA5D2F4
+P 3850 6600
+F 0 "#PWR0106" H 3850 6450 50  0001 C CNN
+F 1 "VBAT" H 3865 6773 50  0000 C CNN
+F 2 "" H 3850 6600 50  0001 C CNN
+F 3 "" H 3850 6600 50  0001 C CNN
+	1    3850 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6800 4200 6600
+Wire Wire Line
+	4200 6800 4350 6800
+Wire Wire Line
+	3950 6900 3950 7000
+Wire Wire Line
+	3950 7000 4750 7000
+Connection ~ 4750 7000
+Wire Wire Line
+	5250 6900 5250 7000
+Wire Wire Line
+	5250 7000 4750 7000
+Wire Wire Line
+	2450 2400 2650 2400
+Text Label 2650 2400 0    50   ~ 0
+XTAL2
+Text Label 2900 4900 1    50   ~ 0
+XTAL2
+Wire Wire Line
+	2600 5800 2700 5800
+Connection ~ 2700 5800
+Wire Wire Line
+	2700 5800 2900 5800
+$Comp
+L Sensor:BMI088 U3
+U 1 1 5BA87C82
+P 4500 1600
+F 0 "U3" H 4650 1925 50  0000 C CNN
+F 1 "BMI088" H 4650 1834 50  0000 C CNN
+F 2 "Package_LGA:BMI088-LGA16" H 3650 1750 50  0001 C CNN
+F 3 "" H 3650 1750 50  0001 C CNN
+	1    4500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR0107
+U 1 1 5BA88AD1
+P 5050 2450
+F 0 "#PWR0107" H 5050 2200 50  0001 C CNN
+F 1 "GND" H 5055 2277 50  0000 C CNN
+F 2 "" H 5050 2450 50  0001 C CNN
+F 3 "" H 5050 2450 50  0001 C CNN
+	1    5050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2200 5000 2200
+Wire Wire Line
+	5000 2200 5000 2150
+Wire Wire Line
+	5050 2200 5050 2250
+Wire Wire Line
+	5000 2250 5050 2250
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2250 5050 2450
+Text Label 3950 1500 2    50   ~ 0
+SDA
+Text Label 3950 1600 2    50   ~ 0
+SCL
+Wire Wire Line
+	3950 1500 4250 1500
+Wire Wire Line
+	3950 1600 4250 1600
+$Comp
+L main:GND #PWR0108
+U 1 1 5BA8C8BF
+P 4100 2400
+F 0 "#PWR0108" H 4100 2150 50  0001 C CNN
+F 1 "GND" H 4105 2227 50  0000 C CNN
+F 2 "" H 4100 2400 50  0001 C CNN
+F 3 "" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2400 4100 2250
+Wire Wire Line
+	4100 2250 4250 2250
+$Comp
+L main:+3V3 #PWR0109
+U 1 1 5BA95236
+P 3900 2150
+F 0 "#PWR0109" H 3900 2000 50  0001 C CNN
+F 1 "+3V3" H 3900 2100 50  0000 C CNN
+F 2 "" H 3900 2150 50  0001 C CNN
+F 3 "" H 3900 2150 50  0001 C CNN
+	1    3900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2150 4100 2150
+Wire Wire Line
+	4250 1900 4100 1900
+Wire Wire Line
+	4100 1900 4100 2150
+Connection ~ 4100 2150
+Wire Wire Line
+	4100 2150 4250 2150
+Wire Wire Line
+	4250 1800 4000 1800
+Wire Wire Line
+	4000 1800 4000 1700
+Wire Wire Line
+	4000 1700 4250 1700
+$Comp
+L main:GND #PWR0110
+U 1 1 5BA96414
+P 4000 1800
+F 0 "#PWR0110" H 4000 1550 50  0001 C CNN
+F 1 "GND" H 4000 1650 50  0000 C CNN
+F 2 "" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0001 C CNN
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 1800
+Wire Wire Line
+	2450 3000 2500 3000
+Text Label 2500 3000 0    50   ~ 0
+SDA
+Text Label 2500 2900 0    50   ~ 0
+SCL
+Wire Wire Line
+	2450 2900 2500 2900
+Text Label 2800 1100 0    50   ~ 0
+SDA
+Text Label 3350 1100 0    50   ~ 0
+SDA
+Text Label 2800 1200 0    50   ~ 0
+SCL
+Text Label 3350 1200 0    50   ~ 0
+SCL
+Wire Wire Line
+	3050 900  3050 800 
+Wire Wire Line
+	3050 800  3100 800 
+$Comp
+L main:+3V3 #PWR0111
+U 1 1 5BA9CC1A
+P 3100 800
+F 0 "#PWR0111" H 3100 650 50  0001 C CNN
+F 1 "+3V3" H 3115 973 50  0000 C CNN
+F 2 "" H 3100 800 50  0001 C CNN
+F 3 "" H 3100 800 50  0001 C CNN
+	1    3100 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3100 800 
+Wire Wire Line
+	3100 800  3200 800 
+$Comp
+L Sensor_Pressure:BMP388 U4
+U 1 1 5BA9EC09
+P 4800 3150
+F 0 "U4" H 4600 3565 50  0000 C CNN
+F 1 "BMP388" H 4600 3474 50  0000 C CNN
+F 2 "Package_LGA:ST_HLGA-10_2.5x2.5mm_P0.6mm_LayoutBorder3x2y" H 4800 3150 50  0001 C CNN
+F 3 "" H 4800 3150 50  0001 C CNN
+	1    4800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3100 4000 3100
+$Comp
+L main:+3V3 #PWR0112
+U 1 1 5BA9F9E7
+P 4000 3100
+F 0 "#PWR0112" H 4000 2950 50  0001 C CNN
+F 1 "+3V3" H 4015 3273 50  0000 C CNN
+F 2 "" H 4000 3100 50  0001 C CNN
+F 3 "" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:+3V3 #PWR0113
+U 1 1 5BA9FA38
+P 5250 3000
+F 0 "#PWR0113" H 5250 2850 50  0001 C CNN
+F 1 "+3V3" H 5265 3173 50  0000 C CNN
+F 2 "" H 5250 3000 50  0001 C CNN
+F 3 "" H 5250 3000 50  0001 C CNN
+	1    5250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3000 5150 3000
+Wire Wire Line
+	5000 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 3000
+Connection ~ 5150 3000
+Wire Wire Line
+	5150 3000 5250 3000
+Wire Wire Line
+	5000 3500 5100 3500
+Wire Wire Line
+	5000 3400 5100 3400
+Wire Wire Line
+	5100 3400 5100 3500
+Connection ~ 5100 3500
+Wire Wire Line
+	5100 3400 5100 3300
+Wire Wire Line
+	5000 3300 5100 3300
+Connection ~ 5100 3400
+$Comp
+L main:GND #PWR0114
+U 1 1 5BAAC2AD
+P 5100 3750
+F 0 "#PWR0114" H 5100 3500 50  0001 C CNN
+F 1 "GND" H 5105 3577 50  0000 C CNN
+F 2 "" H 5100 3750 50  0001 C CNN
+F 3 "" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3300 5400 3500
+Wire Wire Line
+	5400 3500 5550 3500
+Connection ~ 5400 3500
+Wire Wire Line
+	5400 3500 5400 3700
+$Comp
+L main:+3V3 #PWR0115
+U 1 1 5BAAF86E
+P 5550 3500
+F 0 "#PWR0115" H 5550 3350 50  0001 C CNN
+F 1 "+3V3" H 5565 3673 50  0000 C CNN
+F 2 "" H 5550 3500 50  0001 C CNN
+F 3 "" H 5550 3500 50  0001 C CNN
+	1    5550 3500
+	1    0    0    -1  
+$EndComp
+Text Label 4000 3400 0    50   ~ 0
+SCL
+Text Label 4000 3300 0    50   ~ 0
+SDA
+Wire Wire Line
+	4000 3300 4200 3300
+Wire Wire Line
+	4200 3400 4000 3400
+$Comp
+L main:GND #PWR0116
+U 1 1 5BAB2E34
+P 4100 3600
+F 0 "#PWR0116" H 4100 3350 50  0001 C CNN
+F 1 "GND" H 4105 3427 50  0000 C CNN
+F 2 "" H 4100 3600 50  0001 C CNN
+F 3 "" H 4100 3600 50  0001 C CNN
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3500 4100 3500
+Wire Wire Line
+	4100 3500 4100 3600
+Wire Wire Line
+	5350 1950 5350 1900
+Wire Wire Line
+	5350 2050 5350 2100
+Wire Wire Line
+	5150 2050 5150 1950
+$Comp
+L main:+3V3 #PWR0117
+U 1 1 5BACB0E5
+P 5150 1950
+F 0 "#PWR0117" H 5150 1800 50  0001 C CNN
+F 1 "+3V3" H 5165 2123 50  0000 C CNN
+F 2 "" H 5150 1950 50  0001 C CNN
+F 3 "" H 5150 1950 50  0001 C CNN
+	1    5150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1900 5650 2000
+Wire Wire Line
+	5650 2000 5800 2000
+Connection ~ 5650 2000
+Wire Wire Line
+	5650 2000 5650 2100
+$Comp
+L main:GND #PWR0118
+U 1 1 5BACDD5C
+P 5800 2000
+F 0 "#PWR0118" H 5800 1750 50  0001 C CNN
+F 1 "GND" H 5805 1827 50  0000 C CNN
+F 2 "" H 5800 2000 50  0001 C CNN
+F 3 "" H 5800 2000 50  0001 C CNN
+	1    5800 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 1950
+Wire Wire Line
+	5150 1950 5350 1950
+Connection ~ 5150 2050
+Wire Wire Line
+	5150 2050 5350 2050
+Wire Wire Line
+	5000 1950 5150 1950
+Wire Wire Line
+	5000 2050 5150 2050
+$Comp
+L Sensor_Motion:ICG-20660 U5
+U 1 1 5BAD37DC
+P 4450 4200
+F 0 "U5" H 4600 4215 50  0000 C CNN
+F 1 "ICG-20660" H 4600 4124 50  0000 C CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 4450 4200 50  0001 C CNN
+F 3 "" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+Text Label 3750 4650 0    50   ~ 0
+SDA
+Text Label 3750 4550 0    50   ~ 0
+SCL
+$Comp
+L main:+3V3 #PWR0119
+U 1 1 5BAD5159
+P 3850 4850
+F 0 "#PWR0119" H 3850 4700 50  0001 C CNN
+F 1 "+3V3" H 3850 4800 50  0000 C CNN
+F 2 "" H 3850 4850 50  0001 C CNN
+F 3 "" H 3850 4850 50  0001 C CNN
+	1    3850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4650 4000 4650
+Wire Wire Line
+	3750 4550 4000 4550
+Wire Wire Line
+	4000 4450 3600 4450
+$Comp
+L main:+3V3 #PWR0120
+U 1 1 5BADB83F
+P 3600 4450
+F 0 "#PWR0120" H 3600 4300 50  0001 C CNN
+F 1 "+3V3" H 3615 4623 50  0000 C CNN
+F 2 "" H 3600 4450 50  0001 C CNN
+F 3 "" H 3600 4450 50  0001 C CNN
+	1    3600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5BADB8BF
+P 3600 4600
+F 0 "C9" H 3350 4650 50  0000 L CNN
+F 1 "10nF" H 3300 4550 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 3638 4450 50  0001 C CNN
+F 3 "~" H 3600 4600 50  0001 C CNN
+	1    3600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4850 4000 4850
+$Comp
+L main:GND #PWR0121
+U 1 1 5BADCE2D
+P 5450 4650
+F 0 "#PWR0121" H 5450 4400 50  0001 C CNN
+F 1 "GND" H 5455 4477 50  0000 C CNN
+F 2 "" H 5450 4650 50  0001 C CNN
+F 3 "" H 5450 4650 50  0001 C CNN
+	1    5450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4850 5350 4850
+Wire Wire Line
+	5200 4450 5350 4450
+Wire Wire Line
+	5350 4450 5350 4550
+Wire Wire Line
+	5200 4750 5350 4750
+Connection ~ 5350 4750
+Wire Wire Line
+	5350 4750 5350 4850
+Wire Wire Line
+	5200 4650 5350 4650
+Connection ~ 5350 4650
+Wire Wire Line
+	5350 4650 5350 4750
+Wire Wire Line
+	5200 4550 5350 4550
+Connection ~ 5350 4550
+Wire Wire Line
+	5350 4550 5350 4650
+$Comp
+L main:GND #PWR0122
+U 1 1 5BAE846B
+P 5650 5250
+F 0 "#PWR0122" H 5650 5000 50  0001 C CNN
+F 1 "GND" H 5655 5077 50  0000 C CNN
+F 2 "" H 5650 5250 50  0001 C CNN
+F 3 "" H 5650 5250 50  0001 C CNN
+	1    5650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR0123
+U 1 1 5BAEA68C
+P 5450 5050
+F 0 "#PWR0123" H 5450 4800 50  0001 C CNN
+F 1 "GND" H 5455 4877 50  0000 C CNN
+F 2 "" H 5450 5050 50  0001 C CNN
+F 3 "" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4650 5350 4650
+Wire Wire Line
+	5200 4950 5650 4950
+Wire Wire Line
+	5200 5050 5450 5050
+Wire Wire Line
+	5200 5150 5300 5150
+Wire Wire Line
+	5300 5150 5300 5350
+$Comp
+L main:+3V3 #PWR0124
+U 1 1 5BAF31DE
+P 4800 5350
+F 0 "#PWR0124" H 4800 5200 50  0001 C CNN
+F 1 "+3V3" H 4800 5300 50  0000 C CNN
+F 2 "" H 4800 5350 50  0001 C CNN
+F 3 "" H 4800 5350 50  0001 C CNN
+	1    4800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5BAF334C
+P 5300 5500
+F 0 "C11" H 5300 5600 50  0000 L CNN
+F 1 "2.2uF" H 5300 5400 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 5338 5350 50  0001 C CNN
+F 3 "~" H 5300 5500 50  0001 C CNN
+	1    5300 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 5350
+$Comp
+L main:GND #PWR0125
+U 1 1 5BAF3842
+P 5100 5750
+F 0 "#PWR0125" H 5100 5500 50  0001 C CNN
+F 1 "GND" H 5105 5577 50  0000 C CNN
+F 2 "" H 5100 5750 50  0001 C CNN
+F 3 "" H 5100 5750 50  0001 C CNN
+	1    5100 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5750 4950 5750
+Wire Wire Line
+	4950 5750 4950 5650
+Wire Wire Line
+	5100 5750 5300 5750
+Wire Wire Line
+	5300 5750 5300 5650
+Connection ~ 5100 5750
+$Comp
+L main:GND #PWR0126
+U 1 1 5BAF879D
+P 3850 5150
+F 0 "#PWR0126" H 3850 4900 50  0001 C CNN
+F 1 "GND" H 3855 4977 50  0000 C CNN
+F 2 "" H 3850 5150 50  0001 C CNN
+F 3 "" H 3850 5150 50  0001 C CNN
+	1    3850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5150 4000 5150
+$Comp
+L main:GND #PWR0127
+U 1 1 5BAFBA37
+P 3600 4750
+F 0 "#PWR0127" H 3600 4500 50  0001 C CNN
+F 1 "GND" H 3605 4577 50  0000 C CNN
+F 2 "" H 3600 4750 50  0001 C CNN
+F 3 "" H 3600 4750 50  0001 C CNN
+	1    3600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BB00AF2
+P 1550 7250
+F 0 "D1" H 1542 6995 50  0000 C CNN
+F 1 " LG R971-KN-1 " H 1542 7086 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1550 7250 50  0001 C CNN
+F 3 "~" H 1550 7250 50  0001 C CNN
+	1    1550 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L main:+3V3 #PWR0128
+U 1 1 5BB0D0EF
+P 750 7250
+F 0 "#PWR0128" H 750 7100 50  0001 C CNN
+F 1 "+3V3" H 765 7423 50  0000 C CNN
+F 2 "" H 750 7250 50  0001 C CNN
+F 3 "" H 750 7250 50  0001 C CNN
+	1    750  7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7250 1800 7250
+$Comp
+L main:GND #PWR0129
+U 1 1 5BB12B17
+P 1800 7250
+F 0 "#PWR0129" H 1800 7000 50  0001 C CNN
+F 1 "GND" H 1805 7077 50  0000 C CNN
+F 2 "" H 1800 7250 50  0001 C CNN
+F 3 "" H 1800 7250 50  0001 C CNN
+	1    1800 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  7250 750  7250
+$Comp
+L Transistor_BJT:MMDT5551 Q1
+U 1 1 5BB2400B
+P 2650 6550
+F 0 "Q1" V 2978 6550 50  0000 C CNN
+F 1 "MMDT5551" V 2887 6550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2850 6650 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds30172.pdf" H 2650 6550 50  0001 C CNN
+	1    2650 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:MMDT5551 Q1
+U 2 1 5BB241AD
+P 2100 6750
+F 0 "Q1" V 2050 6550 50  0000 C CNN
+F 1 "MMDT5551" V 1950 6450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2300 6850 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/ds30172.pdf" H 2100 6750 50  0001 C CNN
+	2    2100 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 6650 2850 6650
+Wire Wire Line
+	2850 6650 2850 6450
+$Comp
+L main:GND #PWR0130
+U 1 1 5BB5AB30
+P 3000 6650
+F 0 "#PWR0130" H 3000 6400 50  0001 C CNN
+F 1 "GND" H 3005 6477 50  0000 C CNN
+F 2 "" H 3000 6650 50  0001 C CNN
+F 3 "" H 3000 6650 50  0001 C CNN
+	1    3000 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6650 3000 6650
+Connection ~ 2850 6650
+Wire Wire Line
+	2100 7250 2100 7400
+Wire Wire Line
+	2100 7400 2250 7400
+Wire Wire Line
+	2650 7050 2650 7200
+Wire Wire Line
+	2650 7200 2800 7200
+Text Label 2100 7400 0    50   ~ 0
+LED_R
+Text Label 2650 7200 0    50   ~ 0
+LED_B
+$Comp
+L Device:R_US R6
+U 1 1 5BB6E3C9
+P 1150 6650
+F 0 "R6" V 1250 6650 50  0000 C CNN
+F 1 "68Ω" V 1350 6650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1190 6640 50  0001 C CNN
+F 3 "~" H 1150 6650 50  0001 C CNN
+	1    1150 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5BB6E790
+P 1150 6450
+F 0 "R7" V 1355 6450 50  0000 C CNN
+F 1 "5.6Ω" V 1264 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1190 6440 50  0001 C CNN
+F 3 "~" H 1150 6450 50  0001 C CNN
+	1    1150 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L main:+3V3 #PWR0131
+U 1 1 5BB73D55
+P 800 6450
+F 0 "#PWR0131" H 800 6300 50  0001 C CNN
+F 1 "+3V3" H 815 6623 50  0000 C CNN
+F 2 "" H 800 6450 50  0001 C CNN
+F 3 "" H 800 6450 50  0001 C CNN
+	1    800  6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6450 1000 6450
+Wire Wire Line
+	1000 6650 800  6650
+Wire Wire Line
+	800  6650 800  6450
+Connection ~ 800  6450
+Wire Wire Line
+	2450 4000 2700 4000
+Text Label 2500 1800 0    50   ~ 0
+LED_R
+Wire Wire Line
+	2450 1800 2700 1800
+Text Label 2500 4000 0    50   ~ 0
+LED_B
+Connection ~ 3600 4450
+Wire Wire Line
+	2600 4900 2600 5150
+Wire Wire Line
+	2900 4900 2900 5150
+$Comp
+L rocketry:Crystal_SMD Y1
+U 1 1 5BAC89CC
+P 2750 5150
+F 0 "Y1" H 2891 5196 50  0000 L CNN
+F 1 "Crystal_SMD" H 2891 5105 50  0000 L CNN
+F 2 "footprints:Crystal_SMD_FA238" H 2700 5225 50  0001 C CNN
+F 3 "https://support.epson.biz/td/api/doc_check.php?dl=brief_FA-238V_en.pdf" H 2800 5325 50  0001 C CNN
+F 4 "Digi-Key" H 2750 5150 60  0001 C CNN "MFN"
+F 5 "SER3686CT-ND" H 2750 5150 60  0001 C CNN "MPN"
+F 6 "Value" H 2750 5150 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=SER3686CT-ND" H 3200 5725 60  0001 C CNN "PurchasingLink"
+	1    2750 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5150 2900 5150
+Connection ~ 2900 5150
+Wire Wire Line
+	2900 5150 2900 5500
+Wire Wire Line
+	2650 5150 2600 5150
+Connection ~ 2600 5150
+Wire Wire Line
+	2600 5150 2600 5500
+$Comp
+L main:GND #PWR?
+U 1 1 5BAD14B9
+P 2750 5300
+F 0 "#PWR?" H 2750 5050 50  0001 C CNN
+F 1 "GND" H 2755 5127 50  0000 C CNN
+F 2 "" H 2750 5300 50  0001 C CNN
+F 3 "" H 2750 5300 50  0001 C CNN
+	1    2750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR?
+U 1 1 5BAD152F
+P 2400 5000
+F 0 "#PWR?" H 2400 4750 50  0001 C CNN
+F 1 "GND" H 2405 4827 50  0000 C CNN
+F 2 "" H 2400 5000 50  0001 C CNN
+F 3 "" H 2400 5000 50  0001 C CNN
+	1    2400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5000 2400 5000
+$Comp
+L main:+3V3 #PWR?
+U 1 1 5BADB3A2
+P 2950 3200
+F 0 "#PWR?" H 2950 3050 50  0001 C CNN
+F 1 "+3V3" H 2965 3373 50  0000 C CNN
+F 2 "" H 2950 3200 50  0001 C CNN
+F 3 "" H 2950 3200 50  0001 C CNN
+	1    2950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:RFTRANS434MHZ U6
+U 1 1 5BADD29A
+P 6750 4300
+F 0 "U6" H 6572 4102 60  0000 R CNN
+F 1 "RFTRANS434MHZ" H 6572 4208 60  0000 R CNN
+F 2 "rocketry:RFTRANS434MHZ" H 6650 3800 60  0001 C CNN
+F 3 "" H 6750 3900 60  0001 C CNN
+F 4 "https://www.sparkfun.com/products/10534" H 7100 3750 60  0001 C CNN "PurchasingLinks"
+	1    6750 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L rocketry:R_10k R8
+U 1 1 5BAE01B6
+P 2750 3200
+F 0 "R8" V 2543 3200 50  0000 C CNN
+F 1 "R_10k" V 2634 3200 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 2680 3200 50  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/CRS.pdf" H 2830 3200 50  0001 C CNN
+F 4 "CRS0805-FX-1002ELFCT-ND" H 2750 3200 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 2750 3200 60  0001 C CNN "MFN"
+F 6 "Value" H 2750 3200 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 3230 3600 60  0001 C CNN "PurchasingLink"
+	1    2750 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3200 2550 3200
+Wire Wire Line
+	2900 3200 2950 3200
+$Comp
+L rocketry:4.7kR R1
+U 1 1 5BAFB8DE
+P 3050 1050
+F 0 "R1" H 3050 850 50  0000 L CNN
+F 1 "4.7kR" H 3050 750 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" V 2980 1050 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" V 3130 1050 50  0001 C CNN
+F 4 "DigiKey" H 3120 1065 60  0001 L CNN "MFN"
+F 5 " RC0805JR-074K7L " H 3120 959 60  0001 L CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/yageo/RC0805JR-074K7L/311-4.7KARCT-ND/731274" H 3120 853 60  0001 L CNN "PurchasingLink"
+	1    3050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:4.7kR R2
+U 1 1 5BB005F5
+P 3200 950
+F 0 "R2" H 3270 996 50  0000 L CNN
+F 1 "4.7kR" H 3270 905 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" V 3130 950 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_8.pdf" V 3280 950 50  0001 C CNN
+F 4 "DigiKey" H 3270 965 60  0001 L CNN "MFN"
+F 5 " RC0805JR-074K7L " H 3270 859 60  0001 L CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/yageo/RC0805JR-074K7L/311-4.7KARCT-ND/731274" H 3270 753 60  0001 L CNN "PurchasingLink"
+	1    3200 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1100 3200 1100
+Wire Wire Line
+	2800 1200 3050 1200
+Connection ~ 3050 1200
+Wire Wire Line
+	3050 1200 3350 1200
+Connection ~ 3200 1100
+Wire Wire Line
+	3200 1100 3350 1100
+$Comp
+L rocketry:R_1k R5
+U 1 1 5BB0BC96
+P 2650 6900
+F 0 "R5" H 2720 6946 50  0000 L CNN
+F 1 "R_1k" H 2720 6855 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 2580 6900 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 2730 6900 50  0001 C CNN
+F 4 "Digi-Key" H 2650 6900 60  0001 C CNN "MFN"
+F 5 "RNCP0805FTD1K00CT-ND" H 2650 6900 60  0001 C CNN "MPN"
+F 6 "Value" H 2650 6900 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 3130 7300 60  0001 C CNN "PurchasingLink"
+	1    2650 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:R_1k R4
+U 1 1 5BB0BDE7
+P 2100 7100
+F 0 "R4" H 2170 7146 50  0000 L CNN
+F 1 "R_1k" H 2170 7055 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 2030 7100 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 2180 7100 50  0001 C CNN
+F 4 "Digi-Key" H 2100 7100 60  0001 C CNN "MFN"
+F 5 "RNCP0805FTD1K00CT-ND" H 2100 7100 60  0001 C CNN "MPN"
+F 6 "Value" H 2100 7100 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RNCP0805FTD1K00CT-ND" H 2580 7500 60  0001 C CNN "PurchasingLink"
+	1    2100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5BB1F1EA
+P 1550 6450
+F 0 "D2" H 1542 6195 50  0000 C CNN
+F 1 " 150080BS75000 " H 1542 6286 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1550 6450 50  0001 C CNN
+F 3 "~" H 1550 6450 50  0001 C CNN
+	1    1550 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5BB1F38D
+P 1550 6650
+F 0 "D3" H 1550 6750 50  0000 C CNN
+F 1 " LTST-C170KRKT " H 1500 6850 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1550 6650 50  0001 C CNN
+F 3 "~" H 1550 6650 50  0001 C CNN
+	1    1550 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 6450 1400 6450
+Wire Wire Line
+	1400 6650 1300 6650
+Wire Wire Line
+	1700 6650 1900 6650
+Wire Wire Line
+	1700 6450 2450 6450
+$Comp
+L rocketry:R_100 R3
+U 1 1 5BB34F1F
+P 1050 7250
+F 0 "R3" V 843 7250 50  0000 C CNN
+F 1 "R_100" V 934 7250 50  0000 C CNN
+F 2 "footprints:R_0805_OEM" H 980 7250 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-rncp.pdf" H 1130 7250 50  0001 C CNN
+F 4 "Digi-Key" H 1050 7250 60  0001 C CNN "MFN"
+F 5 "RNCP0805FTD100RCT-ND" H 1050 7250 60  0001 C CNN "MPN"
+F 6 "Value" H 1050 7250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RNCP0805FTD100RCT-ND" H 1530 7650 60  0001 C CNN "PurchasingLink"
+	1    1050 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 7250 1200 7250
+$Comp
+L rocketry:CONN_02X03 P1
+U 1 1 5BB6984C
+P 6350 3350
+F 0 "P1" H 6350 3665 50  0000 C CNN
+F 1 "CONN_02X03" H 6350 3574 50  0000 C CNN
+F 2 "footprints:Pin_Header_Straight_2x03" H 6350 2150 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" H 6350 2150 50  0001 C CNN
+F 4 "609-3234-ND" H 6350 3350 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 6350 3350 60  0001 C CNN "MFN"
+F 6 "Value" H 6350 3350 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-3234-ND/1878491" H 6750 3950 60  0001 C CNN "PurchasingLink"
+	1    6350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR?
+U 1 1 5BB79769
+P 6600 3450
+F 0 "#PWR?" H 6600 3200 50  0001 C CNN
+F 1 "GND" H 6605 3277 50  0000 C CNN
+F 2 "" H 6600 3450 50  0001 C CNN
+F 3 "" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:+3V3 #PWR?
+U 1 1 5BB8E26A
+P 6750 3250
+F 0 "#PWR?" H 6750 3100 50  0001 C CNN
+F 1 "+3V3" H 6765 3423 50  0000 C CNN
+F 2 "" H 6750 3250 50  0001 C CNN
+F 3 "" H 6750 3250 50  0001 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3250 6600 3250
+Wire Wire Line
+	2550 3200 2550 3350
+Wire Wire Line
+	2550 3350 2850 3350
+Connection ~ 2550 3200
+Wire Wire Line
+	2550 3200 2600 3200
+Text Label 2650 3350 0    50   ~ 0
+RST
+Text Label 5850 3450 0    50   ~ 0
+RST
+Wire Wire Line
+	6100 3450 5850 3450
+Text Label 2550 2100 0    50   ~ 0
+MISO
+Wire Wire Line
+	2550 2100 2450 2100
+Wire Wire Line
+	2450 2000 2550 2000
+Text Label 2550 2000 0    50   ~ 0
+MOSI
+Wire Wire Line
+	2450 2200 2550 2200
+Text Label 2550 2200 0    50   ~ 0
+SCK
+Text Label 6600 3350 0    50   ~ 0
+MOSI
+Text Label 5850 3250 0    50   ~ 0
+MISO
+Wire Wire Line
+	5850 3250 6100 3250
+Text Label 5850 3350 0    50   ~ 0
+SCK
+Wire Wire Line
+	5850 3350 6100 3350
+$Comp
+L main:GND #PWR?
+U 1 1 5BC0AEC2
+P 6450 4300
+F 0 "#PWR?" H 6450 4050 50  0001 C CNN
+F 1 "GND" H 6455 4127 50  0000 C CNN
+F 2 "" H 6450 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:+3V3 #PWR?
+U 1 1 5BC0AFA8
+P 6150 4100
+F 0 "#PWR?" H 6150 3950 50  0001 C CNN
+F 1 "+3V3" H 6165 4273 50  0000 C CNN
+F 2 "" H 6150 4100 50  0001 C CNN
+F 3 "" H 6150 4100 50  0001 C CNN
+	1    6150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4100 6450 4100
+Text Label 6250 4200 0    50   ~ 0
+TXD
+Wire Wire Line
+	6250 4200 6450 4200
+Text Label 2650 3500 0    50   ~ 0
+TXD
+Wire Wire Line
+	2650 3500 2450 3500
+Wire Wire Line
+	1950 1400 2150 1400
+Wire Wire Line
+	1850 1400 1650 1400
+$Comp
+L main:+3V3 #PWR?
+U 1 1 5BC39682
+P 1900 900
+F 0 "#PWR?" H 1900 750 50  0001 C CNN
+F 1 "+3V3" H 1915 1073 50  0000 C CNN
+F 2 "" H 1900 900 50  0001 C CNN
+F 3 "" H 1900 900 50  0001 C CNN
+	1    1900 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1100 1900 1100
+Wire Wire Line
+	1900 1100 1900 900 
+Wire Wire Line
+	1900 1100 2150 1100
+Connection ~ 1900 1100
+$Comp
+L rocketry:C_0.1uF C14
+U 1 1 5BC5052F
+P 1650 1250
+F 0 "C14" H 1765 1296 50  0000 L CNN
+F 1 "C_0.1uF" H 1765 1205 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 1688 1100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 1675 1350 50  0001 C CNN
+F 4 "478-3352-1-ND" H 1650 1250 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 1650 1250 60  0001 C CNN "MFN"
+F 6 "Value" H 1650 1250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 2075 1750 60  0001 C CNN "PurchasingLink"
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:C_0.1uF C13
+U 1 1 5BC505EA
+P 2150 1250
+F 0 "C13" H 2265 1296 50  0000 L CNN
+F 1 "C_0.1uF" H 2265 1205 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 2188 1100 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 2175 1350 50  0001 C CNN
+F 4 "478-3352-1-ND" H 2150 1250 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 2150 1250 60  0001 C CNN "MFN"
+F 6 "Value" H 2150 1250 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 2575 1750 60  0001 C CNN "PurchasingLink"
+	1    2150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5350 4950 5350
+$Comp
+L rocketry:C_0.1uF C12
+U 1 1 5BC53236
+P 4950 5500
+F 0 "C12" H 4700 5450 50  0000 L CNN
+F 1 "C_0.1uF" H 4650 5350 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 4988 5350 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 4975 5600 50  0001 C CNN
+F 4 "478-3352-1-ND" H 4950 5500 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 4950 5500 60  0001 C CNN "MFN"
+F 6 "Value" H 4950 5500 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5375 6000 60  0001 C CNN "PurchasingLink"
+	1    4950 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 5350
+Wire Wire Line
+	4950 5350 5300 5350
+Wire Wire Line
+	5100 3500 5100 3700
+$Comp
+L rocketry:C_0.1uF C5
+U 1 1 5BC5414E
+P 5250 3700
+F 0 "C5" V 5300 3800 50  0000 C CNN
+F 1 "C_0.1uF" V 5400 3800 50  0000 C CNN
+F 2 "footprints:C_0805_OEM" H 5288 3550 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5275 3800 50  0001 C CNN
+F 4 "478-3352-1-ND" H 5250 3700 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 5250 3700 60  0001 C CNN "MFN"
+F 6 "Value" H 5250 3700 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5675 4200 60  0001 C CNN "PurchasingLink"
+	1    5250 3700
+	0    1    1    0   
+$EndComp
+Connection ~ 5100 3700
+Wire Wire Line
+	5100 3700 5100 3750
+$Comp
+L rocketry:C_0.1uF C6
+U 1 1 5BC5427C
+P 5250 3300
+F 0 "C6" V 5050 3300 50  0000 C CNN
+F 1 "C_0.1uF" V 5100 3400 50  0000 C CNN
+F 2 "footprints:C_0805_OEM" H 5288 3150 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5275 3400 50  0001 C CNN
+F 4 "478-3352-1-ND" H 5250 3300 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 5250 3300 60  0001 C CNN "MFN"
+F 6 "Value" H 5250 3300 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5675 3800 60  0001 C CNN "PurchasingLink"
+	1    5250 3300
+	0    1    1    0   
+$EndComp
+Connection ~ 5100 3300
+$Comp
+L rocketry:C_0.1uF C7
+U 1 1 5BC551C4
+P 5500 1900
+F 0 "C7" V 5250 1800 50  0000 C CNN
+F 1 "C_0.1uF" V 5339 1900 50  0000 C CNN
+F 2 "footprints:C_0805_OEM" H 5538 1750 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5525 2000 50  0001 C CNN
+F 4 "478-3352-1-ND" H 5500 1900 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 5500 1900 60  0001 C CNN "MFN"
+F 6 "Value" H 5500 1900 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5925 2400 60  0001 C CNN "PurchasingLink"
+	1    5500 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L rocketry:C_0.1uF C8
+U 1 1 5BC552C5
+P 5500 2100
+F 0 "C8" V 5600 2000 50  0000 C CNN
+F 1 "C_0.1uF" V 5700 2100 50  0000 C CNN
+F 2 "footprints:C_0805_OEM" H 5538 1950 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5525 2200 50  0001 C CNN
+F 4 "478-3352-1-ND" H 5500 2100 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 5500 2100 60  0001 C CNN "MFN"
+F 6 "Value" H 5500 2100 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=478-3352-1-ND" H 5925 2600 60  0001 C CNN "PurchasingLink"
+	1    5500 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L rocketry:C_30pF C4
+U 1 1 5BC56A60
+P 2900 5650
+F 0 "C4" H 3050 5650 50  0000 L CNN
+F 1 "C_30pF" H 3000 5550 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 2938 5500 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 2925 5750 50  0001 C CNN
+F 4 "1276-1130-1-ND" H 2900 5650 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 2900 5650 60  0001 C CNN "MFN"
+F 6 "Value" H 2900 5650 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL21C300JBANNNC/1276-1130-1-ND/3889216" H 3325 6150 60  0001 C CNN "PurchasingLink"
+	1    2900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:C_30pF C3
+U 1 1 5BC56C11
+P 2600 5650
+F 0 "C3" H 2350 5650 50  0000 L CNN
+F 1 "C_30pF" H 2300 5550 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 2638 5500 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 2625 5750 50  0001 C CNN
+F 4 "1276-1130-1-ND" H 2600 5650 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 2600 5650 60  0001 C CNN "MFN"
+F 6 "Value" H 2600 5650 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL21C300JBANNNC/1276-1130-1-ND/3889216" H 3025 6150 60  0001 C CNN "PurchasingLink"
+	1    2600 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:C_47uF C10
+U 1 1 5BC57739
+P 5650 5100
+F 0 "C10" H 5765 5146 50  0000 L CNN
+F 1 "C_47uF" H 5765 5055 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 5688 4950 50  0001 C CNN
+F 3 "http://www.yuden.co.jp/productdata/catalog/en/mlcc_all_e.pdf" H 5675 5200 50  0001 C CNN
+F 4 "587-4280-1-ND" H 5650 5100 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 5650 5100 60  0001 C CNN "MFN"
+F 6 "Value" H 5650 5100 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/product-detail/en/taiyo-yuden/JMK212BBJ476MG-T/587-4280-1-ND/5344315" H 6075 5600 60  0001 C CNN "PurchasingLink"
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L rocketry:C_1uF C1
+U 1 1 5BC6C152
+P 3950 6750
+F 0 "C1" H 4065 6796 50  0000 L CNN
+F 1 "C_1uF" H 4065 6705 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 3988 6600 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 3975 6850 50  0001 C CNN
+F 4 "CAP CER 1UF 25V X7R 0805" H 4475 7350 60  0001 C CNN "Description"
+F 5 "478-10487-1-ND" H 3950 6750 60  0001 C CNN "MPN"
+F 6 "Digi-Key" H 3950 6750 60  0001 C CNN "MFN"
+F 7 "Value" H 3950 6750 60  0001 C CNN "Package"
+F 8 "https://www.digikey.com/product-detail/en/avx-corporation/08053C105JAT2A/478-10487-1-ND/6797628" H 4375 7250 60  0001 C CNN "PurchasingLink"
+	1    3950 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6600 3950 6600
+Wire Wire Line
+	5150 6600 5250 6600
+$Comp
+L rocketry:C_1uF C2
+U 1 1 5BC6C2AD
+P 5250 6750
+F 0 "C2" H 5365 6796 50  0000 L CNN
+F 1 "C_1uF" H 5365 6705 50  0000 L CNN
+F 2 "footprints:C_0805_OEM" H 5288 6600 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 5275 6850 50  0001 C CNN
+F 4 "CAP CER 1UF 25V X7R 0805" H 5775 7350 60  0001 C CNN "Description"
+F 5 "478-10487-1-ND" H 5250 6750 60  0001 C CNN "MPN"
+F 6 "Digi-Key" H 5250 6750 60  0001 C CNN "MFN"
+F 7 "Value" H 5250 6750 60  0001 C CNN "Package"
+F 8 "https://www.digikey.com/product-detail/en/avx-corporation/08053C105JAT2A/478-10487-1-ND/6797628" H 5675 7250 60  0001 C CNN "PurchasingLink"
+	1    5250 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 6600
+Wire Wire Line
+	5250 6600 5350 6600
+Connection ~ 4200 6600
+Connection ~ 3950 6600
+Wire Wire Line
+	3950 6600 4200 6600
+$Comp
+L Connector:Micro_SD_Card_Det J1
+U 1 1 5BC876DB
+P 8550 5500
+F 0 "J1" H 8500 6317 50  0000 C CNN
+F 1 "Micro_SD_Card_Det" H 8500 6226 50  0000 C CNN
+F 2 "rocketry:SD-Card" H 10600 6200 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 8550 5600 50  0001 C CNN
+	1    8550 5500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
