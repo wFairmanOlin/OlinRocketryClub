@@ -92,17 +92,6 @@ Wire Wire Line
 	4750 7000 4750 7150
 Wire Wire Line
 	4350 6600 4200 6600
-$Comp
-L main:VBAT #PWR0106
-U 1 1 5BA5D2F4
-P 3850 6600
-F 0 "#PWR0106" H 3850 6450 50  0001 C CNN
-F 1 "VBAT" H 3865 6773 50  0000 C CNN
-F 2 "" H 3850 6600 50  0001 C CNN
-F 3 "" H 3850 6600 50  0001 C CNN
-	1    3850 6600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 6800 4200 6600
 Wire Wire Line
@@ -597,29 +586,18 @@ $EndComp
 $Comp
 L main:+3V3 #PWR0128
 U 1 1 5BB0D0EF
-P 850 7300
-F 0 "#PWR0128" H 850 7150 50  0001 C CNN
-F 1 "+3V3" H 865 7473 50  0000 C CNN
-F 2 "" H 850 7300 50  0001 C CNN
-F 3 "" H 850 7300 50  0001 C CNN
-	1    850  7300
+P 850 7550
+F 0 "#PWR0128" H 850 7400 50  0001 C CNN
+F 1 "+3V3" H 865 7723 50  0000 C CNN
+F 2 "" H 850 7550 50  0001 C CNN
+F 3 "" H 850 7550 50  0001 C CNN
+	1    850  7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 7300 1900 7300
-$Comp
-L main:GND #PWR0129
-U 1 1 5BB12B17
-P 1900 7300
-F 0 "#PWR0129" H 1900 7050 50  0001 C CNN
-F 1 "GND" H 1905 7127 50  0000 C CNN
-F 2 "" H 1900 7300 50  0001 C CNN
-F 3 "" H 1900 7300 50  0001 C CNN
-	1    1900 7300
-	1    0    0    -1  
-$EndComp
+	1700 7550 1900 7550
 Wire Wire Line
-	1000 7300 850  7300
+	1000 7550 850  7550
 Text Label 800  6900 0    50   ~ 0
 LED_R
 Text Label 800  6450 0    50   ~ 0
@@ -777,7 +755,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 6900 1900 6900
 Wire Wire Line
-	1400 7300 1300 7300
+	1400 7550 1300 7550
 $Comp
 L rocketry:CONN_02X03 P1
 U 1 1 5BB6984C
@@ -1219,8 +1197,8 @@ $Comp
 L rocketry:LED_0805 D2
 U 1 1 5BBB61AB
 P 1550 6450
-F 0 "D2" H 1542 6195 50  0000 C CNN
-F 1 "LED_0805" H 1542 6286 50  0000 C CNN
+F 0 "D2" H 1500 6650 50  0000 C CNN
+F 1 "LED_0805" H 1550 6550 50  0000 C CNN
 F 2 "rocketry:LED_0805_OEM" H 1450 6450 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 1550 6550 50  0001 C CNN
 F 4 "475-1410-1-ND" H 1550 6450 60  0001 C CNN "MPN"
@@ -1228,14 +1206,14 @@ F 5 "Digi-Key" H 1550 6450 60  0001 C CNN "MFN"
 F 6 "Value" H 1550 6450 60  0001 C CNN "Package"
 F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 1950 6950 60  0001 C CNN "PurchasingLink"
 	1    1550 6450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L rocketry:LED_0805 D3
 U 1 1 5BBC64AB
 P 1550 6900
-F 0 "D3" H 1542 6645 50  0000 C CNN
-F 1 "LED_0805" H 1542 6736 50  0000 C CNN
+F 0 "D3" H 1500 7100 50  0000 C CNN
+F 1 "LED_0805" H 1550 7000 50  0000 C CNN
 F 2 "rocketry:LED_0805_OEM" H 1450 6900 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 1550 7000 50  0001 C CNN
 F 4 "475-1410-1-ND" H 1550 6900 60  0001 C CNN "MPN"
@@ -1243,7 +1221,7 @@ F 5 "Digi-Key" H 1550 6900 60  0001 C CNN "MFN"
 F 6 "Value" H 1550 6900 60  0001 C CNN "Package"
 F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 1950 7400 60  0001 C CNN "PurchasingLink"
 	1    1550 6900
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L rocketry:R_200 R4
@@ -1277,48 +1255,36 @@ F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 1630 73
 $EndComp
 Wire Wire Line
 	1700 6450 1900 6450
-$Comp
-L main:GND #PWR0143
-U 1 1 5BBEE92F
-P 1900 6900
-F 0 "#PWR0143" H 1900 6650 50  0001 C CNN
-F 1 "GND" H 1905 6727 50  0000 C CNN
-F 2 "" H 1900 6900 50  0001 C CNN
-F 3 "" H 1900 6900 50  0001 C CNN
-	1    1900 6900
-	1    0    0    -1  
-$EndComp
-Connection ~ 1900 6900
 Wire Wire Line
 	1900 6450 1900 6900
 $Comp
 L rocketry:R_200 R3
 U 1 1 5BC3C718
-P 1150 7300
-F 0 "R3" V 943 7300 50  0000 C CNN
-F 1 "R_200" V 1034 7300 50  0000 C CNN
-F 2 "rocketry:R_0805_OEM" H 1080 7300 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 1230 7300 50  0001 C CNN
-F 4 "Digi-Key" H 1150 7300 60  0001 C CNN "MFN"
-F 5 "RMCF0805JT200RCT-ND" H 1150 7300 60  0001 C CNN "MPN"
-F 6 "Value" H 1150 7300 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 1630 7700 60  0001 C CNN "PurchasingLink"
-	1    1150 7300
+P 1150 7550
+F 0 "R3" V 943 7550 50  0000 C CNN
+F 1 "R_200" V 1034 7550 50  0000 C CNN
+F 2 "rocketry:R_0805_OEM" H 1080 7550 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 1230 7550 50  0001 C CNN
+F 4 "Digi-Key" H 1150 7550 60  0001 C CNN "MFN"
+F 5 "RMCF0805JT200RCT-ND" H 1150 7550 60  0001 C CNN "MPN"
+F 6 "Value" H 1150 7550 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=RMCF0805JT200RCT-ND" H 1630 7950 60  0001 C CNN "PurchasingLink"
+	1    1150 7550
 	0    1    1    0   
 $EndComp
 $Comp
 L rocketry:LED_0805 D1
 U 1 1 5BC3C999
-P 1550 7300
-F 0 "D1" H 1542 7045 50  0000 C CNN
-F 1 "LED_0805" H 1542 7136 50  0000 C CNN
-F 2 "rocketry:LED_0805_OEM" H 1450 7300 50  0001 C CNN
-F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 1550 7400 50  0001 C CNN
-F 4 "475-1410-1-ND" H 1550 7300 60  0001 C CNN "MPN"
-F 5 "Digi-Key" H 1550 7300 60  0001 C CNN "MFN"
-F 6 "Value" H 1550 7300 60  0001 C CNN "Package"
-F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 1950 7800 60  0001 C CNN "PurchasingLink"
-	1    1550 7300
+P 1550 7550
+F 0 "D1" H 1542 7295 50  0000 C CNN
+F 1 "LED_0805" H 1542 7386 50  0000 C CNN
+F 2 "rocketry:LED_0805_OEM" H 1450 7550 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic9/00078860_0.pdf" H 1550 7650 50  0001 C CNN
+F 4 "475-1410-1-ND" H 1550 7550 60  0001 C CNN "MPN"
+F 5 "Digi-Key" H 1550 7550 60  0001 C CNN "MFN"
+F 6 "Value" H 1550 7550 60  0001 C CNN "Package"
+F 7 "https://www.digikey.com/products/en?keywords=475-1410-1-ND" H 1950 8050 60  0001 C CNN "PurchasingLink"
+	1    1550 7550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1432,4 +1398,79 @@ $EndComp
 Wire Wire Line
 	1100 1350 1400 1350
 Connection ~ 4750 7000
+$Comp
+L main:+BATT #PWR0106
+U 1 1 5BB86B84
+P 3850 6600
+F 0 "#PWR0106" H 3850 6450 50  0001 C CNN
+F 1 "+BATT" H 3865 6773 50  0000 C CNN
+F 2 "" H 3850 6600 50  0001 C CNN
+F 3 "" H 3850 6600 50  0001 C CNN
+	1    3850 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR0129
+U 1 1 5BB12B17
+P 1900 7550
+F 0 "#PWR0129" H 1900 7300 50  0001 C CNN
+F 1 "GND" H 1905 7377 50  0000 C CNN
+F 2 "" H 1900 7550 50  0001 C CNN
+F 3 "" H 1900 7550 50  0001 C CNN
+	1    1900 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:+3V3 #PWR?
+U 1 1 5BCC1DDC
+P 1900 6450
+F 0 "#PWR?" H 1900 6300 50  0001 C CNN
+F 1 "+3V3" H 1915 6623 50  0000 C CNN
+F 2 "" H 1900 6450 50  0001 C CNN
+F 3 "" H 1900 6450 50  0001 C CNN
+	1    1900 6450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 6450
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5BC88156
+P 6900 2250
+F 0 "J2" H 7006 2428 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 7006 2337 50  0000 C CNN
+F 2 "" H 6900 2250 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:GND #PWR?
+U 1 1 5BC91555
+P 7450 2500
+F 0 "#PWR?" H 7450 2250 50  0001 C CNN
+F 1 "GND" H 7455 2327 50  0000 C CNN
+F 2 "" H 7450 2500 50  0001 C CNN
+F 3 "" H 7450 2500 50  0001 C CNN
+	1    7450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L main:+BATT #PWR?
+U 1 1 5BC91B19
+P 7450 2200
+F 0 "#PWR?" H 7450 2050 50  0001 C CNN
+F 1 "+BATT" H 7465 2373 50  0000 C CNN
+F 2 "" H 7450 2200 50  0001 C CNN
+F 3 "" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2250 7450 2250
+Wire Wire Line
+	7450 2250 7450 2200
+Wire Wire Line
+	7100 2350 7450 2350
+Wire Wire Line
+	7450 2350 7450 2500
 $EndSCHEMATC
